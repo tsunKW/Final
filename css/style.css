@@ -1,0 +1,88 @@
+@charset "utf-8";
+@import url("para.css");
+body{font-family:perpetua titling mt;background-color:black;overflow: hidden;}
+img{widtj:100%;height:auto;}
+#Max
+{max-width:1280px;width:100%;}
+header
+{	height:70px;
+	width:100%;
+	background-color:black;
+	}
+#logo
+{	height:50px;
+	width:100%;	
+	}
+#search
+{	line-height:0px;
+	height:50px;
+	background-color:#CCC;
+	float:right;
+	width:30%;
+	}
+#menu ul
+{	height:20px;
+	width:100%;
+	}
+#menu li
+{	background-color:black;
+	color:#DDD;
+	text-align:center;
+	list-style:none;
+	display:inline-block;
+	width:16.5%;
+transition-property:background-color color;
+transition-duration:.2s;
+transition-timing-function:linear;
+
+	}
+#menu li:hover
+{	color:black;
+	background-color:#CCC;
+
+ 	}
+.balance {/*滿版窗格 比例用*/
+	 position: relative;
+	 height:0;
+    padding-bottom:40%;
+    width:100%;
+}
+.balance>div{/*一般區塊 填滿比例窗格*/
+	position: absolute;
+	top:0;
+    left:0;
+	width: 100%;
+	height: 100%;
+}
+#Spot{
+	background-position: center;
+	background-size : 100%;
+	background-image: url(../img/bg/19.jpg);
+}
+.One {/*視覺第一欄*/
+	width: 80%;
+	margin-left:10%;
+	margin-top: 10%;
+	text-align:center;
+	color:white;
+	font-size:70px;
+	line-height:100px;
+}
+.two {/*視覺2欄*/
+	height: 30%;
+	width: 80%;
+	margin-left:10%;
+	text-align:center;
+	color:white;
+	font-size:30px;
+	line-height:20px;
+}
+@media only screen and (min-width: 1280px) {
+
+#Max {
+	 position: relative;
+	 width: 1280px;
+	left: 50%;
+ 	margin-left: -640px;
+}
+}

@@ -1,0 +1,380 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);
+body {
+	font-family:
+	"Adobe 仿宋 Std R", "Adobe 明體 Std L","Noto Sans TC", "Microsoft JhengHei UI"  ;
+	font-style: normal;
+	
+	text-align: center;
+	overflow: scroll;
+	font-weight: 400;
+	background-size : 7.78%;
+	background-image: url(../images/body_bg2.jpg);
+	background-attachment: fixed;
+}
+.balance {/*滿版窗格 比例用*/
+	 position: relative;
+	 height:0;
+    padding-bottom:45%;
+    width:100%;
+}
+.balance>div{/*一般區塊 填滿比例窗格*/
+	position: absolute;
+	   top:0;
+    left:0;
+	width: 100%;
+	height: 100%;
+}
+#Header {/*大導覽*/
+	height: 100px;
+	width: 100%;
+	background-color: #333;
+}
+#toIndex {/*大導覽LOGO外框DIV   變動用*/
+	width: 40%;
+	max-width: 358px;
+	margin-left: 5%;
+	float: left;
+	margin-top: 15px;
+}
+#toIndex img {/*大導覽LOGOPIC比例*/
+width: 60%;
+	height: auto;
+}
+#Header ul{ /*大導覽ul*/
+	margin: 0;
+	padding: 0;
+}
+#Header a{
+	text-decoration: none;
+	color: #FFF;
+	font-size: 24px;
+}
+.BButton>li {/*導覽鈕*/
+	list-style-type: none;
+	width: 10%;
+	float: right;
+	margin-top: 40px;
+	margin-right: 3%;
+	padding: 5px 0 5px 0;
+	border-radius: 5px;
+	border-top-width: thin;
+	border-right-width: thin;
+	border-bottom-width: thin;
+	border-left-width: thin;
+	border-right-style: solid;
+	border-top-color: #FFF;
+	border-right-color: #FFF;
+	border-bottom-color: #FFF;
+	border-left-color: #FFF;
+}
+
+/*大導覽下拉選單*/
+#Header li li{
+	float: none;
+	padding: 20px 0 20px 0;
+	font-size: 23px;
+	margin: 0;
+}
+#Header li li:hover { /*大導覽下拉子選單hover*/
+	background-color: #161616;
+}
+#Header li ul{
+	display: none;
+	position: absolute;
+	background-color: #232323;
+	z-index: 20;
+	list-style-type: none;
+	width: 10%;
+	margin-top: 25px;
+}
+#Header .BButton>li:hover{
+	background-color: #555555;
+}
+/*大導覽下拉選單 end*/
+
+#Nav{/*小導覽*/
+	display: none;
+	height: 90px;
+	width: 100%;
+	background-color: #333333;
+	position: fixed;
+	clear: both;
+	z-index: 10;
+}
+
+/*小導覽漢堡*/
+#Nav .hamburger{
+	display: none;
+	font-size: 2em;
+	color: white;
+	position: relative; /*for hamburger*/
+	top: 50px;
+	right: 15px;
+
+	float: right;
+	padding: 0px 15px 5px 15px;
+	border-radius: 5px;
+}
+.site-ham ul {
+	display: none;
+	position: absolute;
+	top: 90px; /*小導覽高*/
+	margin: 0;
+	padding: 0;
+	right: 0;
+	width: 200px;
+	z-index: 10;
+	/*卷軸*/
+	overflow-y: scroll;
+	overflow-x: hidden;
+	height: 380px;
+}
+.site-ham ul::-webkit-scrollbar{
+	width: 0.6em;
+	background-color: #333333;
+}
+.site-ham ul::-webkit-scrollbar-track{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+.site-ham ul::-webkit-scrollbar-thumb {
+  background-color: #777777;
+	border-radius: 5px;
+}
+body::-webkit-scrollbar{
+	width: 1em;
+	background-color: #222222;
+}
+body::-webkit-scrollbar-corner{
+  background-color: #999999;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #999999;
+}
+/*卷軸end*/
+
+.site-ham li {
+	list-style: none;
+	float: left;
+}
+.site-ham a {
+	display: block;
+	color: #FFF;
+	padding: 20px 0px 20px 0px;
+	width: 200px;
+	background-color: #232323;
+	font-size: 18px;
+	text-decoration: none;
+}
+.site-ham a:hover {
+	background-color: #161616;
+}
+/*小導覽漢堡end*/
+
+/*小導覽鈕*/
+.SButton>li{
+	width: 10%;
+	float: left;
+	margin-top: 60px;
+	margin-left: 3%;
+	padding: 5px 0 5px 0;
+	border-radius: 5px;
+	border: 1px dashed #FFF;
+	font-size: 18px;
+	position: relative;
+	list-style-type: none;
+}
+.SButton a{
+	display: block;
+	text-decoration: none;
+	color: #FFF;
+}
+
+/*小導覽下拉選單*/
+.SButton ul{
+	display: none;
+	position: absolute;
+	float: none;
+	margin-top: 5px;
+	padding: 0;
+	width: 100%;
+}
+.SButton ul li{
+	background-color: rgba(0, 0, 0, 0.6);;
+	width: inherit;
+	float: none;
+	padding: 10px 10px 10px 10px;
+	border-radius: 5px;
+	border: 1px dashed #FFF;
+	font-size: 16px;
+	list-style-type: none;
+}
+.SButton ul li:hover{
+	background-color: #161616;
+}
+/*小導覽下拉選單end*/
+
+/*置中用*/
+#RNav {
+	padding-left: 15%;
+	width: 100%;
+	margin-top: -40px;
+}
+#Home {/*Top Button*/
+	width: 80px;
+	margin-top: 33px;
+	float: left;
+	border: 0;
+	margin-right: 1%;
+}
+#infoot{
+	margin-bottom: 100px;
+	}
+#Footer {
+	background-color: #333;
+	height: 300px;
+	width: 100%;
+	color: #CCC;
+	padding-top: 50px;
+}
+@media screen and (max-width: 768px){
+	#Nav{
+		display: block;
+		top: 0;
+	}
+	#Nav .hamburger{
+		display:block;
+	}
+	.SButton #Home{
+		display: block;
+		margin-left: 26%;
+	}
+	.SButton li{
+		display: none;
+	}
+	#Nav .hamburger:hover {
+		background-color:darkgray;
+		color:white;
+		cursor:pointer;
+	}
+	#Header {
+		display: none;
+	}
+	body{
+		margin-top: 90px;
+	}
+}
+@media only screen and (min-width: 768px){
+	.site-ham{
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 1130px) {
+	#Header li{
+		margin-top: 45px;
+	}
+	#Header a{
+		font-size: 18px;
+	}
+	#Header li li{
+		font-size: 18px;
+	}
+	#Header li ul{
+		margin-top: 25px;
+	}
+}
+@media only screen and (max-width: 1080px) {
+		.SButton ul li{
+			font-size: 16px;
+		}
+}
+@media only screen and (max-width: 920px) {
+	#Header li{
+		margin-top: 50px;
+	}
+	#Header a{
+		font-size: 16px;
+	}
+	#Header li li{
+		font-size: 14px;
+	}
+	.SButton>li{
+		font-size: 14px;
+		margin-top: 63px;
+	}
+	#RNav {
+		padding-left: 12%;
+	}
+	.SButton ul li{  /*小導覽下拉選單*/
+		font-size: 12px;
+	}
+}
+												/*   TEMPLATE ABOVE   */
+
+
+#AboutDTD{/*DTD第二欄 文字*/
+	width: 70%;
+	height: 20%;
+	margin-left: 15%;
+	background: rgba(0, 0, 0, 0.6);
+	color: #CCC;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+}
+
+#Main {
+	width: 100%;
+	background-position: center center;
+	background-size : 33%;
+	background-repeat: repeat;
+	background-attachment: fixed;
+	background: rgba(255, 255, 255, 0.6);
+}
+#MAX {
+	width: 100%;
+	max-width: 1280px;
+	overflow: hidden;
+}
+.CTop {
+	width: 100%;
+}
+.CEmpty {
+	width: 100%;
+	text-align: left;
+	background-repeat: repeat-y;
+	overflow: visible;
+}
+.Line {
+	height: 75%;
+	width: 30%;
+	margin-top: 5%;
+	margin-left: 65%;
+	float: left;
+	background: rgba(255, 255, 255, 0.6);
+	font-size: 18px;
+}
+.BOT {
+
+	position: fixed;
+	left: 0px;
+	bottom: 0px;
+	height: 100px;
+	width: 100%;
+	z-index: 20;
+	background-image: url(../images/BOT.png)  ;
+}
+
+
+
+
+@media only screen and (min-width: 1280px) {
+
+#MAX {
+	 position: relative;
+	 width: 1280px;
+	left: 50%;
+ 	margin-left: -640px;
+}
+}

@@ -1,0 +1,142 @@
+body{
+	background: -webkit-linear-gradient(black,black,black,#070326,#5c3041,#fbdeb6,white,white,white);
+	background: -o-linear-gradient(black,black,black,#070326,#5c3041,#fbdeb6,white,white,white);
+	background: -moz-linear-gradient(black,black,black,#070326,#5c3041,#fbdeb6,white,white,white);
+	background: linear-gradient(black,black,black,#070326,#5c3041,#fbdeb6,white,white,white);
+}
+
+	/*內文設定*/
+	.textbox:hover
+	{	box-shadow:0 0 150px rgba(0,0,0,0.2) ;
+		background-color: rgba(255,255,230,0.1);
+	}
+	.textbox a
+	{	font-size:18px;
+		opacity:0.5;
+		color:white;
+		text-decoration: none;
+		transition-property:opacity text-shadow ;transition-duration:.2s;transition-timing-function:linear;
+		}
+	.textbox a:hover
+	{font-size:20px;
+		opacity: 1;
+		text-shadow: 0px 0px 5px 5px rgba(255,255,230,0.5);
+		-webkit-filter: drop-shadow(0 0 2px rgba(255,255,230,0.8));
+  		filter: drop-shadow(0 0 2px rgba(255,255,230,0.8));
+		}	
+	#proud 
+	{color: black; 
+	line-height:35px;
+	font-family: Roboto,sans-serif;
+	font-weight:light;
+	border-color:rgba(0,0,0,0.5);
+	}
+	#proud a
+	{	color:black;}
+	#proud a:hover
+	{
+		text-shadow: 0px 0px 5px 5px rgba(0,0,0,0.5);		
+		-webkit-filter: drop-shadow(0 0 2px rgba(0,0,0,0.8));
+  		filter: drop-shadow(0 0 2px rgba(0,0,0,0.8));}	
+	.black{ color: black; border:hidden;}
+#rainbow{
+	margin-bottom:-20vh;
+	margin-top:20vh;
+	width:100%;
+	height:100vh;
+}
+#rainbow li
+{	list-style:none;
+	display:inline-block;
+	width:16.666%;
+	height:90vh;
+	overflow:hidden;
+	text-align:center;
+	position:relative;
+	}
+#rainbow .text
+{	-webkit-writing-mode: vertical-lr;
+	writing-mode:tb-lr;
+	font-size:90px;
+	margin-top:30%;
+	line-height:70px;
+	color:white;
+	pointer-events: none;
+	position:absolute;
+	z-index:4;
+	}
+#rainbow img{
+	margin-left:-45vh;
+	height:100%;
+	width:auto;
+	z-index:2;
+	opacity:0.2;
+	-webkit-filter: brightness(200%);
+  	filter:brightness(200%); 
+	transition-property:opacity filter;transition-duration:.2s;transition-timing-function:linear;
+	}
+
+
+#rainbow img:hover{
+	-webkit-filter: brightness(100%);
+  	filter:brightness(100%); 
+	opacity:0.8;
+	}
+
+#rainbow ul{padding:0; margin:0;}
+#rainbow li:nth-child(1){
+box-shadow:rgba(255,57,96.5);
+background: -webkit-linear-gradient(white,rgba(285,87,126,1),rgba(255,57,96,1),white);
+background: -moz-linear-gradient(white,rgba(285,87,126,1),rgba(255,57,96,1),white);
+background: linear-gradient(white,rgba(285,87,126,1),rgba(255,57,96,1),white);
+}
+#rainbow li:nth-child(2){
+box-shadow:rgba(237,128,89,1);
+background: -webkit-linear-gradient(white,rgba(267,158,119,1),rgba(237,128,89,1),white);
+background: -moz-linear-gradient(white,rgba(267,158,119,1),rgba(237,128,89,1),white);
+background: linear-gradient(white,rgba(267,158,119,1),rgba(237,128,89,1),white);
+}
+#rainbow li:nth-child(3){
+box-shadow:rgba(243,215,90,1);
+background: -webkit-linear-gradient(white,rgba(273,245,120,1),rgba(243,215,90,1),white);
+background: -moz-linear-gradient(white,rgba(273,245,120,1),rgba(243,215,90,1),white);
+background: linear-gradient(white,rgba(273,245,120,1),rgba(243,215,90,1),white);
+}
+#rainbow li:nth-child(4){
+box-shadow:rgba(59,255,179,1);
+background: -webkit-linear-gradient(white,rgba(89,255,209,1),rgba(59,255,179,1),white);
+background: -moz-linear-gradient(white,rgba(89,255,209,1),rgba(59,255,179,1),white);
+background: linear-gradient(white,rgba(89,255,209,1),rgba(59,255,179,1),white);
+}
+#rainbow li:nth-child(5){
+box-shadow:rgba(0,151,254,1);
+background: -webkit-linear-gradient(white,rgba(30,181,255,1),rgba(0,151,254,1),white);
+background: -moz-linear-gradient(white,rgba(30,181,255,1),rgba(0,151,254,1),white);
+background: linear-gradient(white,rgba(30,181,255,1),rgba(0,151,254,1),white);
+}
+#rainbow li:nth-child(6){
+box-shadow:rgba(158,96,207,1);
+background: -webkit-linear-gradient(white,rgba(188,126,237,1),rgba(158,96,207,1),white);
+background: -moz-linear-gradient(white,rgba(188,126,237,1),rgba(158,96,207,1),white);
+background: linear-gradient(white,rgba(188,126,237,1),rgba(158,96,207,1),white);
+}
+@media only screen and (min-width: 1280px) {
+
+}
+@media only screen and (max-width: 780px) {
+
+
+}
+@media only screen and (max-width: 420px) {
+#rainbow{
+	margin:0;
+	height:30px;
+	overflow:hidden;
+	
+}
+#rainbow li{height:20px;}
+#rainbow .text{display:none;}
+#rainbow img{display:none;}
+
+}
+

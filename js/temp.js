@@ -20,6 +20,7 @@
 	});
 });
 
+
  $(function(){
  $('#next').click(function(){
     $('html,body').animate({

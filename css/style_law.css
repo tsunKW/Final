@@ -1,0 +1,333 @@
+
+#Spot/*主視覺滿版兼MENU*/
+{	background-image: url(../img/bg/spot_law.png); }
+
+.textbox{
+	font-size: 40px;
+	padding-bottom: 100px;
+	}
+li{
+	list-style: none;
+}
+/*修法進度*/
+#area1{
+	padding-top: 10%;
+	padding-bottom: 30%;
+}
+.legislate_steps{
+	max-width: 100%;
+	margin-left: 4%;
+	margin-right: -4%;
+	margin-top: 5%;
+}
+.legislate_steps li{
+	max-width: 8%;
+	float: left;
+}
+.legislate_steps p{
+	font-size: 2vw;
+	padding: 0;
+	margin-top: -20px;
+}
+#check{
+	margin-left: -20%;
+	width: 150%;
+	text-align: center;
+}
+.illus{display: none;}
+
+/*修民法&立專法*/
+.duotext
+{
+	background-color: rgba(255, 255, 255, 0);
+	}
+#area2 p{
+	font-size: 2vw;
+}
+#area2 > p{ /*副標*/
+	margin-top: 0;
+	font-size: 25px;
+}
+.pic1{
+	display: block;
+	max-width: 40%;
+	margin-top: 5%;
+	margin-left: 7%;
+}
+.pic2{
+	display: block;
+	max-width: 40%;
+	margin-top: 10%;
+	margin-left: 53%;
+}
+.word1{
+	display: block;
+	max-width: 100%;
+	margin-left: 47%;
+	margin-top: -27%;
+	padding-left: 5%;
+	padding-right: 5%;
+	font-size: 1.6vw;
+}
+.word2{
+	display: block;
+	max-width: 42%;
+	margin-left: 3%;
+	margin-top: -27%;
+	padding-bottom: 5%;
+	padding-left: 3%;
+	font-size: 1.6vw;
+}
+
+/*五條法案&四大重點*/
+#line_down{display: none;}
+#four_points{
+	margin-left: -4%;
+}
+#four_points li{
+	max-width: 20%;
+	margin-left: 2.5%;
+	margin-right: 2.5%;
+	float: left;
+}
+#four_points img{
+	max-width: 70%;
+}
+#four_points p{
+	font-size: 2vw;
+	margin: 0;
+}
+.law{
+	font-size: 2vw;
+	margin-top: 35%;
+	margin-left: -4%;
+}
+.law div{
+	max-width: 70%;
+	margin: auto;
+	margin-bottom: 3%;
+	padding: 1% 3% 1% 3%;
+	border-radius: 20px;
+	background-color: rgba(143, 0, 190, 0.3);
+}
+.law .original{
+	background-color: rgba(143, 0, 190, 0);
+	border-radius: 0;
+	border-top: 1px solid white;
+	font-size: 1.5vw;
+	margin-bottom: 0;
+	padding: 1% 0 1% 0;
+}
+#ori1{max-width: 40%;}
+#ori2{max-width: 55%;}
+#ori3{max-width: 50%;}
+.law strong{
+	color: #ffde00;
+}
+.law h3{
+	margin-top: 10%;
+	margin-bottom: 20px;
+	font-size: 2.5vw;
+}
+.law h5{
+	margin: 0;
+	font-style: italic;
+}
+
+@media only screen and (min-width: 1280px) {
+
+}
+
+@media only screen and (max-width: 780px) {
+	#Spot{
+			background-position:50% 10%;
+	}
+	/*修法進度*/
+	#area1{
+		padding-bottom: 100px;
+	}
+	.textbox{
+		padding-bottom: 100px;
+		}
+		.legislate_steps{
+			margin-left: 5%;
+			margin-right: 0;
+		}
+	.legislate_steps li{
+		max-width: 20%;
+		float: none;
+		}
+		.legislate_steps .item{
+			font-size: 3.5vw;
+			margin-top: -10px;
+		}
+	.arrow{
+		transform:rotate(90deg);
+		-ms-transform:rotate(90deg); 	/* IE 9 */
+		-moz-transform:rotate(90deg); 	/* Firefox */
+		-webkit-transform:rotate(90deg); /* Safari 和 Chrome */
+		-o-transform:rotate(90deg); 	/* Opera */
+	}
+	.legislate_steps .illus{
+		display: block;
+		position: absolute;
+		text-align: center;
+		font-size: 4vw;
+		margin-left: 30%;
+		margin-top: 5%;
+	}
+	#st4_words{
+		margin-left: 35%;
+	}
+	#st5_words{
+		margin-left: 40%;
+	}
+	#st6_words{
+		margin-left: 40%;
+	}
+
+	/*修民法&立專法*/
+	#area2{
+		margin-top: 50px;
+	}
+	.pic1{
+		max-width: 50%;
+		margin:auto;
+		margin-top: 7%;
+	}
+	.pic2{
+		max-width: 50%;
+		margin:auto;
+		margin-top: 10%;
+	}
+	.word1{
+		margin:auto;
+		font-size: 2.5vw;
+	}
+	.word2{
+		max-width: 100%;
+		margin:auto;
+		padding-left: 5%;
+		padding-right: 5%;
+		font-size: 2.5vw;
+	}
+	#area2 p{
+		font-size: 4vw;
+		margin: 10px 0 5px;
+	}
+	#area2 > p{ /*副標*/
+		font-size: 22px;
+		padding-bottom: 30px;
+	}
+
+	/*五條法案&四大重點*/
+	#four_points{
+		margin-left: 7%;
+	}
+	#four_points p{
+		font-size: 3vw;
+	}
+	#four_points li{
+		float: none;
+		position: absolute;
+		max-width: 35%;
+	}
+	#line_down{display: block;}
+	#four_points li:nth-child(2){
+		margin-left: 35%;
+	}
+	#four_points li:nth-child(4){
+		margin-left: 35%;
+	}
+	.law{
+		margin-top: 45%;
+		font-size: 2.7vw;
+	}
+	.law div{
+		max-width: 85%;
+	}
+	.law .original{
+		font-size: 2vw;
+	}
+	#ori1{max-width: 45%;}
+	#ori2{max-width: 70%;}
+	#ori3{max-width: 65%;}
+	.law h3{
+		font-size: 3.5vw;
+	}
+
+}
+@media only screen and (max-width: 420px) {
+	/*修法進度*/
+	.legislate_steps{
+		margin-left: 1%;
+	}
+	.legislate_steps .item{
+		font-size: 5vw;
+		margin-top: -2%;
+	}
+	.legislate_steps .illus{
+		font-size: 5vw;
+		margin-left: 25%;
+		margin-top: 5%;
+	}
+	.textbox{
+		font-size: 30px;
+		}
+	#st4_words{
+		margin-left: 30%;
+		}
+	#st5_words{
+		margin-left: 35%;
+	}
+	#st6_words{
+		margin-left: 35%;
+	}
+
+	/*修民法&立專法*/
+	.pic1{
+		max-width: 70%;
+		margin-top: 10%;
+	}
+	.pic2{
+		max-width: 70%;
+		margin-top: 13%;
+	}
+	.word1{
+		font-size: 3.8vw;
+	}
+	.word2{
+		max-width: 100%;
+		font-size: 3.8vw;
+	}
+	#area2 p{
+		font-size: 5vw;
+		padding: -1% 0 -1%;
+	}
+
+	/*五條法案&四大重點*/
+	#four_points{
+		margin-left: 4%;
+	}
+	#four_points p{
+		font-size: 4vw;
+	}
+	.law{
+		margin-left: -9%;
+		font-size: 3.7vw;
+		margin-top: 55%;
+	}
+	.law div{
+		max-width: 73%;
+		padding: 1% 5% 1% 5%;
+	}
+	.law .original{
+		font-size: 2vw;
+	}
+	#ori1{max-width: 65%;}
+	#ori2{max-width: 65%;}
+	#ori3{max-width: 65%;}
+	.law h3{
+		font-size: 4.5vw;
+	}
+}

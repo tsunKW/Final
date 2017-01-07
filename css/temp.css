@@ -8,8 +8,9 @@ body{font-family:perpetua titling mt;
 	z-index:5;
 	width:200vw;
 	height:100vh;
-	box-shadow: -100px 0 60px 5px black inset;
-	pointer-events: none;}
+	box-shadow: -50vw 0 60px 5px black inset;
+	pointer-events: none;
+	-webkit-transform: translateZ(0);}
 img{width:100%;height:auto;}
 #Spot/*主視覺滿版兼MENU*/
 {	width:100%;
@@ -422,7 +423,7 @@ header{display:none;}
 	}
 #shade{
 	height:200vh;
-	box-shadow: -100px -100px 60px 5px black inset;
+	box-shadow: -100px -100vh 60px 5px black inset;
 	pointer-events: none;}
 
 }

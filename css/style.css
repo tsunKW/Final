@@ -1,12 +1,32 @@
-
+body{
+	background: -webkit-linear-gradient(black,black,black,#070326,#5c3041,#fbdeb6,white,white);
+	background: -o-linear-gradient(black,black,black,#070326,#5c3041,#fbdeb6,white,white);
+	background: -moz-linear-gradient(black,black,black,#070326,#5c3041,#fbdeb6,white,white);
+	background: linear-gradient(black,black,black,#070326,#5c3041,#fbdeb6,white,white);
+}
 #Spot/*主視覺滿版兼MENU*/
 {	background-image: url(../img/bg/19.jpg);
+
 }
-	
+iframe
+{	width:90vw;
+	margin:0;
+	height:60vw;}
+footer
+{	box-shadow:0 0 60px 10px white,0 0 50px 10px white,0 0 40px 20px white;
+	background-color:white;
+	}
 @media only screen and (min-width: 1280px) {
-
+iframe
+{	width:1250px;
+	height:790px;}
+}
 @media only screen and (max-width: 720px) {
-
+#Spot
+{	background-position:30% 10%;
+	background-size : 180%;
+	background-image: url(../img/bg/19.jpg);
+}
 
 }
 @media only screen and (max-width: 330px) {

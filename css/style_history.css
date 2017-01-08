@@ -166,11 +166,11 @@ li{
 }
 
 @media only screen and (max-width: 420px) {
-	.time h4{font-size: 3.8vw;}
-	.time ul{font-size: 3vw;}
-	.year_R{font-size: 4.5vw;}
+	.time h4{font-size: 25px;}
+	.time ul{font-size: 15px;}
+	.year_R{font-size: 20px;}
 	.year_L{
-		font-size: 4.5vw;
+		font-size: 20px;
 		margin-left: -23%;
 	}
 	.S_line_L{ /*事件卡 線*/
@@ -180,4 +180,7 @@ li{
 		height: 1px;
 	}
 	#time_line{margin-bottom: 150px;}
+	.time li{
+		border-radius: 10px;
+	}
 }

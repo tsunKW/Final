@@ -7,7 +7,8 @@
  *
  * Copyright (c) 2016 Daniel Eden
  */
-
+#like00,#like01,#like02,#like03,#like04,#like06,#like57,#like09{}
+.like{}
 .animated {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;

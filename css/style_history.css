@@ -8,6 +8,20 @@ li{
 	border: none;
 }
 /*MAP*/
+#map2_btn{
+	width: 6.5vw;
+	height: 6.5vw;
+	border: 2px solid white;
+	border-radius: 50%;
+	font-size: 1.5vw;
+	position: absolute;
+	margin: 15% 0 0 85%;
+}
+#map2_btn:hover{
+	color: black;
+	background-color: white;
+	cursor: pointer;
+}
 #map h2{
 	margin-bottom: 0;
 }
@@ -19,8 +33,22 @@ li{
 	max-width: 5px;
 	margin: auto;
 	background-color: white;
-	margin-bottom: 300px;
 	margin-top: 1%;
+	z-index: 0;
+}
+#triangle{
+	border-top: 8vw solid white;
+	border-right: 4vw solid transparent;
+	border-left: 4vw solid transparent;
+	display: inline-block;
+	margin-bottom: 250px;
+}
+#heart{
+	position: absolute;
+	max-width: 10vw;
+	margin-left: -5.3%;
+	margin-top: -2%;
+	z-index: 10;
 }
 .time{
 	position: relative;
@@ -58,7 +86,7 @@ li{
 	height: 1.3vw;
 	border-radius: 50%;
 	background-color: white;
-	z-index: 999;
+	z-index: 9;
 	margin-left: 37%;
 }
 .S_line_L{ /*事件卡 線*/
@@ -66,7 +94,7 @@ li{
 	height: 3px;
 	width: 9%;
 	background-color: white;
-	z-index: 999;
+	z-index: 9;
 	margin-left: 38%;
 	margin-top: 0.5vw;
 }
@@ -76,7 +104,7 @@ li{
 	height: 1.3vw;
 	border-radius: 50%;
 	background-color: white;
-	z-index: 999;
+	z-index: 9;
 	margin-left: 1%;
 }
 .S_line_R{ /*事件卡 線*/
@@ -84,7 +112,7 @@ li{
 	height: 3px;
 	width: 9%;
 	background-color: white;
-	z-index: 999;
+	z-index: 9;
 	margin-left: -7%;
 	margin-top: 0.5vw;
 }
@@ -138,6 +166,11 @@ li{
 }
 
 @media only screen and (min-width: 1280px) {
+	#map2_btn{
+		width: 100px;
+		height: 100px;
+		font-size: 23px;
+	}
 	.time h4{font-size: 30px;}
 	.time ul{font-size: 22px;}
 	.year_R{font-size: 30px;}
@@ -145,10 +178,24 @@ li{
 		font-size: 30px;
 		margin-left: -16%;
 	}
+	#triangle{
+		border-top: 60px solid white;
+		border-right: 30px solid transparent;
+		border-left: 30px solid transparent;
+	}
 }
 
 @media only screen and (max-width: 780px) {
 	#Spot{background-position:40% 10%;}
+
+	/*map*/
+	#map2_btn{
+		width: 9vw;
+		height: 9vw;
+		font-size: 2.1vw;
+	}
+
+	/*time line*/
 	.time h4{font-size: 2.7vw;}
 	.time ul{font-size: 2vw;}
 	.year_R{font-size: 2.7vw;}
@@ -162,16 +209,33 @@ li{
 	.S_line_R{ /*事件卡 線*/
 		height: 2px;
 	}
-	#time_line{margin-bottom: 200px;}
+	#triangle{
+		margin-bottom: 200px;
+	}
 }
 
 @media only screen and (max-width: 420px) {
+	/*map*/
+	#map2_btn{
+		width: 60px;
+		height: 60px;
+		font-size: 14px;
+		margin: 23% 0 0 78%;
+	}
+	#map h2{
+		margin-bottom: 8%;
+	}
+	#map h5{
+		display: none;
+	}
+
+	/*time line*/
 	.time h4{font-size: 25px;}
 	.time ul{font-size: 15px;}
 	.year_R{font-size: 20px;}
 	.year_L{
 		font-size: 20px;
-		margin-left: -23%;
+		margin-left: -25%;
 	}
 	.S_line_L{ /*事件卡 線*/
 		height: 1px;
@@ -179,8 +243,13 @@ li{
 	.S_line_R{ /*事件卡 線*/
 		height: 1px;
 	}
-	#time_line{margin-bottom: 150px;}
 	.time li{
 		border-radius: 10px;
+	}
+	#triangle{
+		border-top: 40px solid white;
+		border-right: 20px solid transparent;
+		border-left: 20px solid transparent;
+		margin-bottom: 150px;
 	}
 }

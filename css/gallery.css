@@ -3,25 +3,21 @@ body{
 	background: -o-linear-gradient(black,black,black,#070326,#5c3041,#fbdeb6,white,white,white);
 	background: -moz-linear-gradient(black,black,black,#070326,#5c3041,#fbdeb6,white,white,white);
 	background: linear-gradient(black,black,black,#070326,#5c3041,#fbdeb6,white,white,white);
+	width:100vw;height:auto;
 }
-#Spot/*主視覺滿版兼MENU*/
-{
-	background-image: url(../img/bg/21.jpg);
-}
+#Spot/*主視覺滿版兼MENU*/{	background-image: url(../img/bg/21.jpg);}
 
 .tripic
 {	/*並排pic框*/
-	padding-top:0;
 	display:inline-block;
 	position:relative;
 	margin:1vw 1vw 1vw 1vw ;
 	width:30vw;
-	height:18vw;
+	height:18vw; 
 	overflow:hidden;
 	background:rgba(0,0,0,0.5);
 	transition-property:box-shadow background-color height;transition-duration:.2s;transition-timing-function:linear;
 	}
-
 .tripic img{
 	width:100%;
 	height:auto;
@@ -29,60 +25,53 @@ body{
   	filter:brightness(50%); 
 	transition-property:filter ;transition-duration:.2s;transition-timing-function:linear;
 	}
-.picinfo{margin-top:20px;display:none; width:100%; height:auto;font-size:25px;font-style:italic;	text-shadow:2px 2px 5px rgba(0,0,0,0.8);}
+.picinfo{margin-top:20px;display:none; width:100%; height:auto;font-size:25px;text-shadow:2px 2px 5px rgba(0,0,0,0.8);}
 .info2{font-style:	normal;font-size:18px;}
-.open img,.tripic img:hover{
-	-webkit-filter: brightness(100%);
-  	filter:brightness(100%); 
-	}
 .features{display:none;}
-.open .features{display:inline-block;}
-.tripic:hover{	
-		box-shadow:0 0 150px rgba(0,0,0,0.2) ;
-	}
-.open { box-sizing: border-box;width:97.5vw;height:auto;position:	absolute;z-index:100;margin:0;padding:9vh 9vw 9vh 9vw;background-color: rgba(255,255,253,0.8);color:black;}
+.opn { box-sizing: border-box;width:97vw;height:auto;z-index:100;padding:9vh 9vw 9vh 9vw;background-color: rgba(255,255,253,0.8);color:black;}
+.opn img,.tripic img:hover{-webkit-filter: brightness(100%);filter:brightness(100%); }
+.opn .features{display:inline-block;}
+.opn .hfz:before{content:"Designer - 黃梵真";font-size:40px; 	text-shadow:2px 2px 5px rgba(0,0,0,0.8);}
+.opn .features,.opn .picinfo{display:block;}
+.tripic:hover{	box-shadow:0 0 150px rgba(0,0,0,0.2) ;}
 .tripic ul{list-style:none;margin:0 0 10px 0;padding:0;font-size:20px;}
-.tripic li{margin:0 .5% 0 .5%;list-style:none;display:inline-block;font-size: 18px;width:15%;box-shadow:0 0 5px black ;background-color:#FFF;color:balck;transition-property:box-shadow background-color;transition-duration:.2s;transition-timing-function:linear;color:black;text-decoration: none;text-shadow: 0px 0px 10px 5px rgba(255,255,230,0.8);}
+.tripic li{margin:0 .5% 0 .5%;list-style:none;display:inline-block;font-size: 18px;width:18%;box-shadow:0 0 5px black ;background-color:#FFF;color:balck;transition-property:box-shadow background-color;transition-duration:.2s;transition-timing-function:linear;color:black;text-decoration: none;text-shadow: 0px 0px 10px 5px rgba(255,255,230,0.8);}
 .tripic li:hover{box-shadow:0 0 15px black inset;background-color:#EEE; cursor:pointer;}
 .tripic li:active{box-shadow:0 0 15px gray inset;background-color:#ddd;}
-.open .hfz:before{content:"Designer - 黃梵真";font-size:40px; 	text-shadow:2px 2px 5px rgba(0,0,0,0.8);}
-.open .features,.open .picinfo{display:block;}
 
 @media only screen and (min-width: 1280px) {
 .tripic
 {	/*並排pic框*/
 	margin:12px 12px 12px 12px ;
 	width:384px;
-	height:273px;
+	height:225px;
 	}
-.open { box-sizing: border-box;width:1254px;height:auto;position:	absolute;z-index:100;margin:0;padding:9vh 9vw 9vh 9vw;background-color: rgba(255,255,253,0.8);color:black;}
-
+.opn { width:1254px;z-index:100;margin:0;}
 }
 @media only screen and (max-width: 780px) {
 .tripic
 {	/*並排pic框*/
 	margin:3vw 2vw 3vw 2vw ;
 	width:44vw;
-	height:30vw;
+	height:26vw;
 	}
-	.tripic li{margin:0 2% 0 2%;font-size: 18px;width:45%}
-.open { box-sizing: border-box;width:96.5vw;height:auto;position:	absolute;z-index:100;margin:0;padding:9vh 9vw 9vh 9vw;background-color: rgba(255,255,253,0.8);color:black;}
+.tripic li{margin:0 2% 0 2%;font-size: 18px;width:45%}
+.opn {width:96vw; margin:0;}
 .picinfo{margin-top:20px;height:auto;font-style:italic;	text-shadow:2px 2px 5px rgba(0,0,0,0.8);}
 .info2{font-style:	normal;}
-
 }
 @media only screen and (max-width: 420px) {
 .tripic
 {	/*並排pic框*/
-	margin: 5vw 0   5vw 0;
+	margin: 5vw 0 5vw 0;
 	width:100vw;
-	height:70vw;
-	overflow:visible;
+	height:59vw;
 	}
-.open .hfz:before{font-size:40px;}
-.open { box-sizing: border-box;width:96.5vw;height:auto;position:	absolute;z-index:100;margin:0;padding:9vh 9vw 9vh 9vw;background-color: rgba(255,255,253,0.8);color:black;}
+	
+.opn .hfz:before{font-size:30px;}
+.opn { width:100vw; }
 .picinfo{margin-top:20px;height:auto;font-size:25px;font-style:italic;	text-shadow:2px 2px 5px rgba(0,0,0,0.8);}
 .info2{font-style:	normal;font-size:18px;}
-
 }
 
+.opn{display:block;height:auto;}

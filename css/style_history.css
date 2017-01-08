@@ -1,21 +1,183 @@
 
 #Spot/*主視覺滿版兼MENU*/
 {	background-image: url(../img/bg/spot_history.png); }
-
 li{
 	list-style: none;
 }
+.textbox{
+	border: none;
+}
+/*MAP*/
+#map h2{
+	margin-bottom: 0;
+}
+#map h5{
+	margin: 0;
+}
+/*TIME_LINE*/
+#time_line{
+	max-width: 5px;
+	margin: auto;
+	background-color: white;
+	margin-bottom: 300px;
+	margin-top: 1%;
+}
+.time{
+	position: relative;
+	height: 100%;
+}
+.time ul{
+		position: absolute;
+		width: 100%;
+		font-family: FangSong,'cwTeXFangSong',Adobe Fangsong Std;
+		color: white;
+		font-size: 1.2vw;
+		padding: 0;
+		margin: 0;
+		transition-property: box-shadow background-color;transition-duration:.2s;transition-timing-function:linear;
+}
+.time li{
+	max-width: 40%;
+	width: 40%;
+	margin-bottom: 2.5%;
+	padding: 1% 1% 1% 1%;
+	border-radius: 15px;
+	z-index: 1;
+}
+.time h4{
+	font-size: 1.6vw;
+	margin: 0;
+	font-style: oblique;
+}
+.time strong{
+	font-style: italic;
+}
+.dot_L{ /*事件卡 點*/
+	position: absolute;
+	width: 1.3vw;
+	height: 1.3vw;
+	border-radius: 50%;
+	background-color: white;
+	z-index: 999;
+	margin-left: 37%;
+}
+.S_line_L{ /*事件卡 線*/
+	position: absolute;
+	height: 3px;
+	width: 9%;
+	background-color: white;
+	z-index: 999;
+	margin-left: 38%;
+	margin-top: 0.5vw;
+}
+.dot_R{ /*事件卡 點*/
+	position: absolute;
+	width: 1.3vw;
+	height: 1.3vw;
+	border-radius: 50%;
+	background-color: white;
+	z-index: 999;
+	margin-left: 1%;
+}
+.S_line_R{ /*事件卡 線*/
+	position: absolute;
+	height: 3px;
+	width: 9%;
+	background-color: white;
+	z-index: 999;
+	margin-left: -7%;
+	margin-top: 0.5vw;
+}
+.left{ /*左方事件卡*/
+	margin-left: 2%;
+}
+.right{ /*右方事件卡*/
+	margin-left: 56%;
+	margin-right: 2%;
+}
+/*US美國 DM丹麥 GL全球 FC法國 HL荷蘭 GM德國 CN加拿大 CH中國 IR愛爾蘭 TW台灣*/
+/*card color*/
+.US{background-color: #f5a71d;}
+.DM{background-color: #e7794b;}
+.GL{background-color: #30426a;}
+.FC{background-color: #2fb1c0;}
+.HL{background-color: #2fb1c0;}
+.GM{background-color: #f5a71d;}
+.CN{background-color: #2fb1c0;}
+.CH{background-color: #b1d236;}
+.IR{background-color: #ef385d;}
+.TW{background-color: #b1d236;}
+/*time word color*/
+.US strong{color: #ffe3b1;}
+.DM strong{color: #9a2d00;}
+.GL strong{color: #b9cfff;}
+.FC strong{color: #006773;}
+.HL strong{color: #006773;}
+.GM strong{color: #ffe3b1;}
+.CN strong{color: #006773;}
+.CH strong{color: #417d00;}
+.IR strong{color: #ffbac8;}
+.TW strong{color: #417d00;}
+
+/*年份*/
+.year_R{
+		position: absolute;
+		font-family: FangSong,'cwTeXFangSong',Adobe Fangsong Std;
+		text-align: center;
+		color: white;
+		font-size: 2vw;
+		margin: -2% 0 0 48.5%;
+}
+.year_L{
+		position: absolute;
+		font-family: FangSong,'cwTeXFangSong',Adobe Fangsong Std;
+		text-align: center;
+		color: white;
+		font-size: 2vw;
+		margin: -2% 0 0 -15%;
+}
 
 @media only screen and (min-width: 1280px) {
-
+	.time h4{font-size: 30px;}
+	.time ul{font-size: 22px;}
+	.year_R{font-size: 30px;}
+	.year_L{
+		font-size: 30px;
+		margin-left: -16%;
+	}
 }
 
 @media only screen and (max-width: 780px) {
-	#Spot{
-			background-position:50% 10%;
+	#Spot{background-position:40% 10%;}
+	.time h4{font-size: 2.7vw;}
+	.time ul{font-size: 2vw;}
+	.year_R{font-size: 2.7vw;}
+	.year_L{
+		font-size: 2.7vw;
+		margin-left: -17%;
 	}
-
+	.S_line_L{ /*事件卡 線*/
+		height: 2px;
+	}
+	.S_line_R{ /*事件卡 線*/
+		height: 2px;
+	}
+	#time_line{margin-bottom: 200px;}
 }
-@media only screen and (max-width: 420px) {
 
+@media only screen and (max-width: 420px) {
+	.time h4{font-size: 3.8vw;}
+	.time ul{font-size: 3vw;}
+	.year_R{font-size: 4.5vw;}
+	.year_L{
+		font-size: 4.5vw;
+		margin-left: -23%;
+	}
+	.S_line_L{ /*事件卡 線*/
+		height: 1px;
+	}
+	.S_line_R{ /*事件卡 線*/
+		height: 1px;
+	}
+	#time_line{margin-bottom: 150px;}
 }

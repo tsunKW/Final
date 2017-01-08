@@ -1,0 +1,21 @@
+
+#Spot/*主視覺滿版兼MENU*/
+{	background-image: url(../img/bg/spot_history.png); }
+
+li{
+	list-style: none;
+}
+
+@media only screen and (min-width: 1280px) {
+
+}
+
+@media only screen and (max-width: 780px) {
+	#Spot{
+			background-position:50% 10%;
+	}
+
+}
+@media only screen and (max-width: 420px) {
+
+}

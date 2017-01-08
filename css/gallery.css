@@ -6,7 +6,8 @@ body{
 	width:100vw;height:auto;
 }
 #Spot/*主視覺滿版兼MENU*/{	background-image: url(../img/bg/21.jpg);}
-
+#like00,#like01,#like02,#like03,#like04,#like06,#like57,#like09{}
+.like{}
 .tripic
 {	/*並排pic框*/
 	display:inline-block;

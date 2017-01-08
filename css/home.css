@@ -6,6 +6,8 @@ body{
 }
 
 	/*內文設定*/
+.duotext
+{		vertical-align:middle ;}
 	.textbox:hover
 	{	box-shadow:0 0 150px rgba(0,0,0,0.2) ;
 		background-color: rgba(255,255,230,0.1);

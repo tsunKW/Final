@@ -20,7 +20,8 @@ footer
 	height:100vh;
 	box-shadow: -50vw 0 60px 5px black inset;
 	pointer-events: none;
-	-webkit-transform: translateZ(0);}
+	-webkit-transform: translateZ(0);
+	}
 img{width:100%;height:auto;}
 #Spot/*主視覺滿版兼MENU*/
 {	width:100%;
@@ -31,16 +32,9 @@ img{width:100%;height:auto;}
 	background-image: url(../img/bg/19.jpg);
 	color:white;
 	text-shadow:0px 0px 30px #FFFFBB;
-	overflow:hidden;
+	overflow:hidden; 
 	transition-property:max-height;transition-duration:.2s;transition-timing-function:linear;
 }
-	/*動圖...怪怪的*/
-	/*transition-property:background-size background-position;transition-duration:30s;transition-timing-function:linear;
-}
-#Spot:hover{
-	background-position:right ;
-	background-size :100% ;
-	}*/
 header
 {	/*menu*/
 	height:80px;
@@ -103,17 +97,17 @@ header
 		color:white;
 		text-decoration: none;
 		text-shadow: 0px 0px 10px 5px rgba(255,255,230,0.8);
-		transition-property:opacity text-shadow font-size;transition-duration:.2s;transition-timing-function:linear;
+		transition-property:opacity text-shadow font-size filter;transition-duration:.2s;transition-timing-function:linear;
 		}
 	#menu li a:hover
 	{	opacity: 1;
-		font-size: 15px;
+		font-size: 15px;-webkit-filter: drop-shadow(3px 3px 3px rgba(0,0,0,1));filter: drop-shadow(3px 3px 3px rgba(0,0,0,1));
 		}	
 	#menu li a:active
 	{	-webkit-filter: drop-shadow(0 0 7px rgba(255,255,230,0.8));
   		filter: drop-shadow(0 0 7px rgba(255,255,230,0.8));
 	}
-
+	.slogan,.title{-webkit-filter: drop-shadow(3px 3px 3px rgba(0,0,0,1));filter: drop-shadow(3px 3px 3px rgba(0,0,0,1));} 
 	.title 
 	{	width: 80%;
 		margin-left:10%;
@@ -155,7 +149,7 @@ header
 		height:60px;
 		width:60px;
 		background:url(../img/item/downbuttonB.png);
-		margin:2% 0% 0% -30px;
+		margin:2% 0% 3% -30px;
 		position: relative;
 		left: 50%;
 		transition-property:background margin opacity;transition-duration:.2s;transition-timing-function:linear;
@@ -297,7 +291,6 @@ header
 	border-bottom-width: 3px;
 	border-bottom-style: solid;
 	border-bottom-color: rgba(255,255,230,0.8));
-	transition-property:box-shadow background-color;transition-duration:.2s;transition-timing-function:linear;
 	}
 .duotext
 {	/*並排文字框*/

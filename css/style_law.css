@@ -135,7 +135,28 @@ li{
 }
 
 @media only screen and (min-width: 1280px) {
+	/*修法進度*/
+	#check{font-size: 25px;}
+	.legislate_steps .item{font-size: 28px;}
 
+	/*修民法&立專法*/
+	#area2 p{font-size: 35px;}
+	#area2 > p{font-size: 25px;}
+	.word1{font-size: 22px;}
+	.word2{font-size: 22px;}
+
+	/*五條法案&四大重點*/
+	#four_points p{font-size: 33px;}
+	.law{font-size: 25px;}
+	.law div{max-width: 1000px;}
+	.law .original{
+		font-size: 18px;
+		max-width: 720px;
+	}
+	#ori1{max-width: 400px;}
+	#ori2{max-width: 500px;}
+	#ori3{max-width: 460px;}
+	.law h3{font-size: 40px;}
 }
 
 @media only screen and (max-width: 780px) {

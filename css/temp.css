@@ -1,6 +1,6 @@
 @charset "utf-8";
 body{font-family:perpetua titling mt;
-	background-color:black;	
+	background-color:black;
 	}
 footer
 {	font-family:perpetua titling mt;
@@ -32,9 +32,28 @@ img{width:100%;height:auto;}
 	background-image: url(../img/bg/19.jpg);
 	color:white;
 	text-shadow:0px 0px 30px #FFFFBB;
-	overflow:hidden; 
+	overflow:hidden;
 	transition-property:max-height;transition-duration:.2s;transition-timing-function:linear;
 }
+
+/*sign up/in*/
+#user_sign{
+	text-decoration: none;
+	color: white;
+	float: right;
+	margin-top: -32px;
+	margin-right: 10px;
+}
+#user_icon{
+	width: 17px;
+	margin-right: 5px;
+}
+#user_sign:hover{
+	-webkit-filter: drop-shadow(0 0 7px rgba(255,255,230,0.9));
+	filter: drop-shadow(0 0 7px rgba(255,255,230,0.9));
+}
+/*sign up/in end*/
+
 header
 {	/*menu*/
 	height:80px;
@@ -43,7 +62,7 @@ header
 #logo
 {	/*好像不用LOGO了，留著放搜尋高度*/
 	height:50px;
-	width:100%;	
+	width:100%;
 	}
 	/*googlesearch樣式*/
 		#search
@@ -52,8 +71,9 @@ header
 			width:30%;
 			min-width:200px;
 			color:black;
+			margin-right: 110px;/*add sign up/in*/
 		}
-		.gsc-control-cse td 
+		.gsc-control-cse td
 		{ 	filter:alpha(opacity=50);
 			opacity:0.6;
 			transition-property:opacity filter;transition-duration:.2s;transition-timing-function:linear;
@@ -67,7 +87,7 @@ header
 		.gsc-search-button-v2
 		{	/*	搜尋鈕隱藏，按鈕是一張圖無法更改*/
 			 display:none;}
-		.gsc-control-cse 
+		.gsc-control-cse
 		{	/*搜尋框外框隱藏*/
 			font-family: Times, serif;
 			border-color: rgba(0,0,0,0);
@@ -78,10 +98,10 @@ header
 			transition-property:opacity;transition-duration:.2s;transition-timing-function:linear;
 			}
 	/*googlesearch樣式*/
-	#menu 
+	#menu
 	{	height:30px;
-		width:100%;	
-		line-height:18px;	
+		width:100%;
+		line-height:18px;
 		text-align:center;
 		padding:0;/*不加會有不明左邊空白*/
 		}
@@ -102,13 +122,13 @@ header
 	#menu li a:hover
 	{	opacity: 1;
 		font-size: 15px;-webkit-filter: drop-shadow(3px 3px 3px rgba(0,0,0,1));filter: drop-shadow(3px 3px 3px rgba(0,0,0,1));
-		}	
+		}
 	#menu li a:active
 	{	-webkit-filter: drop-shadow(0 0 7px rgba(255,255,230,0.8));
   		filter: drop-shadow(0 0 7px rgba(255,255,230,0.8));
 	}
-	.slogan,.title{-webkit-filter: drop-shadow(3px 3px 3px rgba(0,0,0,1));filter: drop-shadow(3px 3px 3px rgba(0,0,0,1));} 
-	.title 
+	.slogan,.title{-webkit-filter: drop-shadow(3px 3px 3px rgba(0,0,0,1));filter: drop-shadow(3px 3px 3px rgba(0,0,0,1));}
+	.title
 	{	width: 80%;
 		margin-left:10%;
 		margin-top: 18%;
@@ -116,8 +136,8 @@ header
 		font-size:6vw;
 		line-height:100px;
 		transition-property:opacity;transition-duration:.2s;transition-timing-function:linear;
-	}	
-	.slogan 
+	}
+	.slogan
 	{	width: 80%;
 		margin-left:10%;
 		text-align:center;
@@ -165,7 +185,7 @@ header
 		-webkit-filter: drop-shadow(0 0 7px rgba(0,0,0,0.8));
   		filter: drop-shadow(0 0 7px rgba(0,0,0,0.8));
 	}
-	
+
 		/*漢堡*/
 			#hamburger
 			{  width: 100%;
@@ -202,7 +222,7 @@ header
 			  -o-transition: .25s ease-in-out;
 			  transition: .25s ease-in-out;
 			}
-			
+
 			#hamburger span:nth-child(1) {
 			  top: 0px;
 			}
@@ -274,7 +294,7 @@ header
 			body::-webkit-scrollbar-thumb {
 			  background-color: #999999;
 			}
-			
+
 /*仿宋*/@import url(http://fonts.googleapis.com/earlyaccess/cwtexfangsong.css);
 
 #Max{
@@ -318,14 +338,14 @@ h3{padding: 0px;margin: 0px;}
 
 
 @media only screen and (min-width: 1280px) {
-.title 
+.title
 {	width: 80%;
 	margin-left:10%;
 	text-align:center;
 	font-size:80px;
 	line-height:100px;
 }
-.slogan 
+.slogan
 {	width: 80%;
 	margin-left:10%;
 	text-align:center;
@@ -355,7 +375,7 @@ h3{padding: 0px;margin: 0px;}
 /*googlesearch樣式*/
 		#search
 		{	width:100%;}
-		.gsc-control-cse td 
+		.gsc-control-cse td
 		{ 	filter:alpha(opacity=50);
 			opacity:0.6;
 		transition-property:opacity filter;transition-duration:.2s;transition-timing-function:linear;
@@ -367,7 +387,7 @@ h3{padding: 0px;margin: 0px;}
 		.gsc-search-button-v2
 		{	/*	搜尋鈕隱藏，按鈕是一張圖無法更改*/
 			 display:none;}
-		.gsc-control-cse 
+		.gsc-control-cse
 		{	/*搜尋框外框隱藏*/
 			font-family: Times, serif;
 
@@ -385,7 +405,7 @@ header{display:none;}
 	color:white;
 	transition-property:max-height;transition-duration:.2s;transition-timing-function:linear;
 }
-.title 
+.title
 {	width: 80%;
 	margin-left:10%;
 	margin-top: 20%;
@@ -393,7 +413,7 @@ header{display:none;}
 	font-size:55px;
 	line-height:50px;
 }
-.slogan 
+.slogan
 {	width: 80%;
 	margin-left:10%;
 	text-align:center;
@@ -428,7 +448,7 @@ header{display:none;}
 	}
 
 .duotext
-{	
+{
 	margin:30px 0 0px 0 ;
 	display:block;
 	width:100%;
@@ -461,4 +481,3 @@ header{display:none;}
 
 }
 }
-

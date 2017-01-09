@@ -15,7 +15,7 @@ $(function(){
     if($(this).hasClass("click")){
       $(this).removeClass("click");
       $("#w_map").attr("src","img/history/map.png");
-      $("#map h5").css("display", "block");
+      $("#map h5").css("visibility", "visible");
       $(".mark").css("display", "inline-block");
       $("#DM_word").css("display", "block");
       $("#HL_word").css("display", "block");
@@ -25,7 +25,7 @@ $(function(){
       $(".mark").css("display", "none");
       $("#DM_word").css("display", "none");
       $("#HL_word").css("display", "none");
-      $("#map h5").css("display", "none");
+      $("#map h5").css("visibility", "hidden");
       $("#w_map").attr("src","img/history/map2.png");
       return false;
     }

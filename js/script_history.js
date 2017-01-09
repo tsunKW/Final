@@ -15,7 +15,7 @@ $(function(){
     if($(this).hasClass("click")){
       $(this).removeClass("click");
       $("#w_map").attr("src","img/history/map.png");
-      $("#map h5").css("visibility", "visible");
+      $("#map h5").css("display", "block");
       $(".mark").css("display", "inline-block");
       $("#DM_word").css("display", "block");
       $("#HL_word").css("display", "block");
@@ -25,7 +25,7 @@ $(function(){
       $(".mark").css("display", "none");
       $("#DM_word").css("display", "none");
       $("#HL_word").css("display", "none");
-      $("#map h5").css("visibility", "hidden");
+      $("#map h5").css("display", "none");
       $("#w_map").attr("src","img/history/map2.png");
       return false;
     }
@@ -113,37 +113,32 @@ $(function(){
     //top
     if(scrollTop < year_title){
       $(".heart").css("position", "relative");
-      $(".heart").css("margin-bottom", "-8.8%");
-      $(".heart").css("margin-left", "89.7%");
+      $(".heart").css("margin-bottom", "-230px");
+	  $(".heart").css("margin-top", 0);
+	  $(".heart").css("margin-left", 0.9*width);
     }
     else if(scrollTop > (bottom+year_title) ){
-      $(".heart").css("position", "relative");
-      $(".heart").css("margin-left", "89.7%");
-      $(".heart").css("margin-bottom", "0"-h);
     }
     else{
       $(".heart").css("position", "fixed");
       $(".heart").css("margin-bottom", "0");
-      $(".heart").css("margin-left", "0");
+      $(".heart").css("left", "none");
     }
   // 不知道為甚麼1280以上就壞掉只好硬修...
     if(width >= 1280){
       if(scrollTop < (year_title+height)){
         $(".heart").css("position", "relative");
-        $(".heart").css("margin-bottom", "-8.8%");
-        $(".heart").css("margin-left", "89.7%");
-      }
-      else if(scrollTop > (bottom+year_title+height)){
-        $(".heart").css("position", "relative");
-        $(".heart").css("margin-left", "89.7%");
-        $(".heart").css("margin-bottom", "0"-h);
+      $(".heart").css("margin-bottom", "-230px");
+	  $(".heart").css("margin-top", 0);
+	  $(".heart").css("margin-left", "-1280px");
       }
       else{
         $(".heart").css("position", "fixed");
         $(".heart").css("margin-bottom", "0");
-        $(".heart").css("margin-left", "0");
+        $(".heart").css("margin-left", "-70px");
       }
     }
+
   });
 
 });

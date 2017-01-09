@@ -42,8 +42,11 @@ li{
 	-moz-animation-iteration-count: infinite;
 	-webkit-animation-direction: alternate;
 	-moz-animation-direction: alternate;
+		transition-property: filter ;transition-duration:.2s;transition-timing-function:linear;
+
 }
-.mark:hover{cursor: pointer;}
+.mark:hover{cursor: pointer;	-webkit-filter: drop-shadow(0 0 7px rgba(255,255,230,0.8));  	
+	filter:  drop-shadow(0 0 7px rgba(255,255,230,0.8));}
 .mark_word{
 	position: absolute;
 	font-family: impact;
@@ -72,12 +75,17 @@ li{
 	font-size: 1.5vw;
 	position: absolute;
 	margin: 15% 0 0 85%;
+			transition-property:filter background-color color;transition-duration:.2s;transition-timing-function:linear;
+
 }
 #map2_btn:hover{
 	color: black;
 	background-color: white;
 	cursor: pointer;
-}
+
+	
+-webkit-filter: drop-shadow(0 0 7px rgba(255,255,230,0.8));  	
+	filter:  drop-shadow(0 0 7px rgba(255,255,230,0.8));}
 #map h2{
 	margin-bottom: 0;
 }
@@ -116,7 +124,6 @@ li{
 		font-size: 1.2vw;
 		padding: 0;
 		margin: 0;
-		transition-property: box-shadow background-color;transition-duration:.2s;transition-timing-function:linear;
 }
 .time li{
 	width: 40%;
@@ -126,7 +133,7 @@ li{
 	z-index: 1;
 	-webkit-filter: brightness(50%);
   	filter:brightness(50%); 
-	transition-property: box-shadow background-color;transition-duration:.2s;transition-timing-function:linear;
+	transition-property: box-shadow background-color ;transition-duration:.2s;transition-timing-function:linear;
 }
 .time li:hover
 {box-shadow:0 0 30px rgba(100,100,100,1);	-webkit-filter: brightness(100%);
@@ -251,6 +258,13 @@ li{
 	/*position: fixed;*/
 	/*don't move*/
 	position: relative;
+transition-property:filter ;transition-duration:.2s;transition-timing-function:linear;
+}
+.heart:hover{	-webkit-filter: drop-shadow(0 0 7px rgba(255,255,230,0.8));  	
+	filter: drop-shadow(0 0 7px rgba(255,255,230,0.8));
+}
+.heart:active{	-webkit-filter:brightness(120%) drop-shadow(0 0 7px rgba(255,255,230,0.8));  	
+	filter:brightness(120%)  drop-shadow(0 0 7px rgba(255,255,230,0.8));
 }
 .anchor{/*錨點偏移*/
 	display: block;
@@ -421,3 +435,18 @@ li{
 .time ul li:nth-child(26) .dot_R ,.time ul li:nth-child(26) .S_line_R  {background-color: #490049;}
 .time ul li:nth-child(27) .dot_R ,.time ul li:nth-child(27) .S_line_R  {background-color: #110011;}
 
+.time li a
+	{	opacity:0.5;
+		color:white;
+		text-decoration: none;
+		text-shadow: 0px 0px 10px 5px rgba(255,255,230,0.8);
+		transition-property:opacity text-shadow font-size filter;transition-duration:.2s;transition-timing-function:linear;
+		}
+.time li a:hover
+	{	opacity: 1;
+		font-size: 15px;-webkit-filter: drop-shadow(3px 3px 3px rgba(0,0,0,1));filter: drop-shadow(3px 3px 3px rgba(0,0,0,1));
+		}	
+.time li a:active
+	{	-webkit-filter: drop-shadow(0 0 7px rgba(255,255,230,0.8));
+  		filter: drop-shadow(0 0 7px rgba(255,255,230,0.8));
+	}

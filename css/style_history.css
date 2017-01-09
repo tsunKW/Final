@@ -7,6 +7,32 @@ li{
 .textbox{
 	border: none;
 }
+/*MAP MARK*/
+.mark{
+	position: absolute;
+	max-width: 4vw;
+	z-index: 99;
+}
+.mark:hover{cursor: pointer;}
+.mark_word{
+	position: absolute;
+	font-family: impact;
+	color: white;
+	font-size: 2vw;
+}
+/*US美國 DM丹麥 GL全球 FC法國 HL荷蘭 GM德國 CN加拿大 CH中國 IR愛爾蘭 TW台灣*/
+#CN_mark{margin: -46% 0 0 -35%;}
+#US_mark{margin: -39.5% 0 0 -32%;}
+#DM_mark{margin: -75% 0 0 -48%;}
+#DM_word{margin: -74.5% 0 0 6.5%;}/*丹麥 字*/
+#FC_mark{margin: -41.8% 0 0 -4.5%;}
+#HL_mark{margin: -70% 0 0 -48%;}
+#HL_word{margin: -69.5% 0 0 6.5%;}/*荷蘭 字*/
+#GM_mark{margin: -44% 0 0 -2.5%;}
+#CH_mark{margin: -39% 0 0 21.5%;}
+#TW_mark{margin: -34% 0 0 27.5%;}
+#IR_mark{margin: -44.5% 0 0 -7.5%;}
+
 /*MAP*/
 #map2_btn{
 	width: 6.5vw;
@@ -28,13 +54,14 @@ li{
 #map h5{
 	margin: 0;
 }
+
 /*TIME_LINE*/
 #time_line{
 	max-width: 5px;
 	margin: auto;
 	background-color: white;
 	margin-top: 1%;
-	z-index: 0;
+	z-index: 1;
 }
 #triangle{
 	border-top: 8vw solid white;
@@ -43,12 +70,17 @@ li{
 	display: inline-block;
 	margin-bottom: 250px;
 }
-#heart{
-	position: absolute;
+.heart{
+	z-index: 100;
 	max-width: 10vw;
-	margin-left: -5.3%;
-	margin-top: -2%;
-	z-index: 10;
+	cursor: pointer;
+	bottom: 55%;
+	right: 45%;
+	/*position: fixed;*/
+	/*don't move*/
+	margin-bottom: -8.8%;
+	margin-left: 89.7%;
+	position: relative;
 }
 .time{
 	position: relative;
@@ -71,6 +103,9 @@ li{
 	padding: 1% 1% 1% 1%;
 	border-radius: 15px;
 	z-index: 1;
+}
+.time img{
+	border-radius: 10px;
 }
 .time h4{
 	font-size: 1.6vw;
@@ -147,6 +182,22 @@ li{
 .IR strong{color: #ffbac8;}
 .TW strong{color: #417d00;}
 
+#orlando img{
+	margin-top: 1vw;
+	height: 25vw;
+	width: 25vw;
+}
+#idahot img{
+	margin-top: 1vw;
+	height: 25vw;
+	width: 25vw;
+}
+#TW img{
+	margin-top: 1vw;
+	height: 25vw;
+	width: 25vw;
+}
+
 /*年份*/
 .year_R{
 		position: absolute;
@@ -183,10 +234,25 @@ li{
 		border-right: 30px solid transparent;
 		border-left: 30px solid transparent;
 	}
-	#heart{
-		max-width: 180px;
-		margin-left: -90px;
-		margin-top: -40px;
+	#orlando img{
+		height: 400px;
+		width: 400px;
+	}
+	#idahot img{
+		height: 400px;
+		width: 400px;
+	}
+	#TW img{
+		height: 400px;
+		width: 400px;
+	}
+	.heart{
+		max-width: 128px;
+		/*max-width: 10vw;*/
+		/*position: fixed;*/
+		/*don't move*/
+		margin-bottom: -110px;
+		margin-left: 1150px;
 	}
 }
 
@@ -214,8 +280,34 @@ li{
 	.S_line_R{ /*事件卡 線*/
 		height: 2px;
 	}
+	#time_line{
+		max-width: 3px;
+	}
 	#triangle{
 		margin-bottom: 200px;
+	}
+
+	/*pic*/
+	#orlando img{
+		margin: auto;
+		margin-bottom: 3%;
+		margin-top: 4%;
+		height: 90%;
+		width: 90%;
+	}
+	#idahot img{
+		margin: auto;
+		margin-bottom: 3%;
+		margin-top: 4%;
+		height: 90%;
+		width: 90%;
+	}
+	#TW img{
+		margin: auto;
+		margin-bottom: 3%;
+		margin-top: 4%;
+		height: 90%;
+		width: 90%;
 	}
 }
 
@@ -250,6 +342,9 @@ li{
 	}
 	.time li{
 		border-radius: 10px;
+	}
+	#time_line{
+		max-width: 2px;
 	}
 	#triangle{
 		border-top: 40px solid white;

@@ -6,7 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Sign Up/In</title>
 
-  <!--  font -->
+  <!-- Roboto Font -->
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
 
   <!-- Firebase JS -->
   <script src="https://www.gstatic.com/firebasejs/3.6.4/firebase.js"></script>
@@ -14,14 +15,14 @@
   <!-- Material Design Lite -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue_grey-amber.min.css">
-  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  <script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
 
   <!-- JQuery -->
-  <script src="js/jquery-3.1.1.slim.min.js"></script>
+  <script src="js/jquery-3.1.1.min.js"></script>
 
   <!-- JS&CSS -->
-  <script src="js/firebase.js"></script>
-  <link rel="stylesheet" href="css/sign.css">
+  <script src="js/script_sign.js"></script>
+  <link rel="stylesheet" href="css/style_sign.css">
 
   <!-- favicon -->
   <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
@@ -31,47 +32,58 @@
   <meta name="theme-color" content="#ffffff">
 
 </head>
+
 <body>
 
-  <div class="demo-card-wide mdl-card mdl-shadow--2dp">
-  <div class="mdl-card__title">
-    <h2 class="mdl-card__title-text">Sign Up/In/Out</h2>
-  </div>
-  <div class="mdl-card__supporting-text">
-    <!-- text field -->
-    <form action="#">
-      <div class="mdl-textfield mdl-js-textfield">
-        <input class="mdl-textfield__input" type="text" id="email">
-        <label class="mdl-textfield__label" for="sample1">Email</label>
-      </div>
-    </form>
-    <form action="#">
-      <div class="mdl-textfield mdl-js-textfield">
-        <input class="mdl-textfield__input" type="password" id="password">
-        <label class="mdl-textfield__label" for="sample1">Password</label>
-      </div>
-    </form>
+    <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+    <div class="mdl-card__title">
+      <h2 class="mdl-card__title-text">SIGN UP/IN</h2>
+    </div>
+    <div class="mdl-card__supporting-text">
+      <!-- text field -->
+      <form action="#">
+        <div class="mdl-textfield mdl-js-textfield move">
+          <input class="mdl-textfield__input" type="text" id="email">
+          <label class="mdl-textfield__label" for="sample1">Email</label>
+        </div>
+      </form>
+      <form action="#">
+        <div class="mdl-textfield mdl-js-textfield move">
+          <input class="mdl-textfield__input" type="password" id="password">
+          <label class="mdl-textfield__label" for="sample1">Password</label>
+        </div>
+      </form>
 
-    <!-- Sign Information -->
-    <div class="mdl-card__supporting-text" id="sign-info">No one login...</div>
+      <!-- Sign Information -->
+      <div class="mdl-card__supporting-text" id="sign-info">No one login...</div>
 
-    <!-- text field -->
-  </div>
-        <ul id="card1_btn">
-          <li>
-            <!-- Raised button with ripple -->
-            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" id="btnSignUp">
-              Sign Up
-            </button>
-          </li>
-          <li>
-            <!-- Raised button with ripple -->
-            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" id="btnSignIn">
-              Sign In
-            </button>
-          </li>
-        </ul>
-  </div>
+      <!-- text field -->
+    </div>
+          <ul id="card1_btn">
+            <li>
+              <!-- Raised button with ripple -->
+              <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" id="btnSignUp">
+                Sign Up
+              </button>
+            </li>
+            <li>
+              <!-- Raised button with ripple -->
+              <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect colorset" id="btnSignIn">
+                Sign In
+              </button>
+            </li>
+            <li>
+              <!-- Raised disabled button -->
+              <button class="mdl-button mdl-js-button mdl-button--raised" id ="btnSignOut" disabled>
+                Sign Out
+              </button>
+            </li>
+          </ul>
+
+    </div>
+  <!--card1 end-->
+
 
 </body>
+
 </html>

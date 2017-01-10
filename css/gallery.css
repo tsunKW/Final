@@ -5,9 +5,10 @@ body{
 	background: linear-gradient(black,black,black,#070326,#5c3041,#fbdeb6,white,white,white);
 	width:100vw;height:auto;
 }
+.none{display:none;}
 #Spot/*主視覺滿版兼MENU*/{	background-image: url(../img/bg/21.jpg);}
 #like00,#like01,#like02,#like03,#like04,#like06,#like57,#like09{}
-.like{}
+.like:after{content:" ❤"; color:red;}
 .tripic
 {	/*並排pic框*/
 	display:inline-block;
@@ -26,18 +27,30 @@ body{
   	filter:brightness(50%); 
 	transition-property:filter ;transition-duration:.2s;transition-timing-function:linear;
 	}
+
 .picinfo{margin-top:20px;display:none; width:100%; height:auto;font-size:25px;text-shadow:2px 2px 5px rgba(0,0,0,0.8);}
 .info2{font-style:	normal;font-size:18px;width:100%;}
 .tripic:hover{	box-shadow:0 0 150px rgba(0,0,0,0.2) ;}
-.tripic ul{list-style:none;margin:0 0 10px 0;padding:0;font-size:20px;}
-.tripic li{margin:0 .5% 0 .5%;list-style:none;display:inline-block;font-size: 18px;width:18%;box-shadow:0 0 5px black ;background-color:#FFF;color:balck;transition-property:box-shadow background-color;transition-duration:.2s;transition-timing-function:linear;color:black;text-decoration: none;text-shadow: 0px 0px 10px 5px rgba(255,255,230,0.8);}
-.tripic li:hover{box-shadow:0 0 15px black inset;background-color:#EEE; cursor:pointer;}
-.tripic li:active{box-shadow:0 0 15px gray inset;background-color:#ddd;}
+.textbox ul{list-style:none;margin:0 0 10px 0;padding:0;font-size:20px;}
+.textbox li{opacity:0.8;margin:0 .5% 0 .5%;list-style:none;display:inline-block;font-size: 18px;width:18%;box-shadow:0 0 5px black ;background-color:#FFF;color:balck;transition-property:opacity box-shadow;transition-duration:.2s;transition-timing-function:linear;color:black;text-decoration: none;text-shadow: 0px 0px 10px 5px rgba(255,255,230,0.8);}
+.textbox li:hover{opacity:1;box-shadow:0 0 15px black; cursor:pointer;}
+.textbox li:active{box-shadow:0 0 15px gray inset;background-color:#ddd;}
 .info2 ,.features{display:none;}
 .opn { box-sizing: border-box;width:97vw;height:auto;z-index:100;padding:9vh 9vw 9vh 9vw;background-color: rgba(255,255,253,0.8);color:black;}
-.opn img,.tripic img:hover{-webkit-filter: brightness(100%);filter:brightness(100%); }
+.opn img,.tripic img:hover{cursor:	default;-webkit-filter: brightness(100%);filter:brightness(100%); }
+
+
 .opn .features,.opn .info2 ,.opn .picinfo{display:block;}
 .opn .hfz:before{content:"Designer - 黃梵真";font-size:40px; 	text-shadow:2px 2px 5px rgba(0,0,0,0.8);}
+.opn .tmw:before{content:"Designer - The Middle of Winter";font-size:40px; 	text-shadow:2px 2px 5px rgba(0,0,0,0.8);}
+.opn .enl:before{content:"Designer - Enan Lin";font-size:40px; 	text-shadow:2px 2px 5px rgba(0,0,0,0.8);}
+.opn .arn:before{content:"Designer - 聶永真 Aaron Nieh";font-size:40px; 	text-shadow:2px 2px 5px rgba(0,0,0,0.8);}
+.opn .tzy:before{content:"Designer - 田中鈺";font-size:40px; 	text-shadow:2px 2px 5px rgba(0,0,0,0.8);}
+.opn .tby:before{content:"Designer - 曾柏瑜";font-size:40px; 	text-shadow:2px 2px 5px rgba(0,0,0,0.8);}
+.opn .tyt:before{content:"Designer - 蔡語彤";font-size:40px; 	text-shadow:2px 2px 5px rgba(0,0,0,0.8);}
+.opn .syb:before{content:"Designer - Starrybird";font-size:40px; 	text-shadow:2px 2px 5px rgba(0,0,0,0.8);}
+
+
 
 
 
@@ -57,7 +70,7 @@ body{
 	width:44vw;
 	height:26vw;
 	}
-.tripic li{margin:0 2% 0 2%;font-size: 18px;width:45%}
+.textbox li{margin:0 2% 0 2%;font-size: 18px;width:45%}
 .opn {width:96vw; margin:0;}
 .picinfo{margin-top:20px;height:auto;font-style:italic;	text-shadow:2px 2px 5px rgba(0,0,0,0.8);}
 .info2{font-style:	normal;}

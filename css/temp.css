@@ -88,8 +88,32 @@ img{width:100%;height:auto;}
 	max-width: 200px;
 	margin: auto;
 	padding-top: 10px;
+	/*log out*/
+	/*display: none;*/
+}
+#like_text{
+	color: #607d8b;
+	margin-left: 35px;
+	display: none;
+}
+#like_pic{ /*log in*/
+	padding: 0;
+	margin: 0;
+	margin-left:5px;
+	list-style: none;
+	display: none;
+}
+#like_pic li{
+	float: left;
+	margin: 10px 0 20px 30px;
+}
+.user-pic{
+	width: 60px;
+	height: 60px;
+	box-sizing: border-box;
 }
 #sign-info {
+	clear: both;
 	margin: 25px 0 25px 100px;
   color: #607d8b;
   font-size: 15px;

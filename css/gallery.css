@@ -2,21 +2,29 @@ body{
 	background: -webkit-linear-gradient(black,black,black,#070326,#5c3041,#fbdeb6,white,white,white);
 	background: -o-linear-gradient(black,black,black,#070326,#5c3041,#fbdeb6,white,white,white);
 	background: -moz-linear-gradient(black,black,black,#070326,#5c3041,#fbdeb6,white,white,white);
-	background: linear-gradient(black,black,black,#070326,#5c3041,#fbdeb6,white,white,white);height:auto;
-	transition-property:height ;transition-duration:.2s;transition-timing-function:linear;
+	background: linear-gradient(black,black,black,#070326,#5c3041,#fbdeb6,white,white,white);
+	height:auto;
+		transition-property:height ;transition-duration:.2s;transition-timing-function:linear;
 
 }
 .none{display:none;}
 #Spot/*主視覺滿版兼MENU*/{	background-image: url(../img/bg/21.jpg);}
 #like00,#like01,#like02,#like03,#like04,#like06,#like57,#like09{}
-.like:after{content:" ❤"; color:red;}
+.like{
+	color: black;
+	padding: 0;
+	margin: 0;
+	margin-left: 3vw;
+	margin-right: -3vw;
+	float: left;
+}
 .tripic
 {	/*並排pic框*/
 	display:inline-block;
 	position:relative;
 	margin:1vw 1vw 1vw 1vw ;
 	width:30vw;
-	height:18vw; 
+	height:18vw;
 	overflow:hidden;
 	background:rgba(0,0,0,0.5);
 	transition-property:box-shadow background-color height;transition-duration:.2s;transition-timing-function:linear;
@@ -25,7 +33,7 @@ body{
 	width:100%;
 	height:auto;
 	-webkit-filter: brightness(50%);
-  	filter:brightness(50%); 
+  	filter:brightness(50%);
 	transition-property:filter ;transition-duration:.2s;transition-timing-function:linear;
 	}
 
@@ -39,7 +47,7 @@ body{
 .info2 ,.features{display:none;}
 .opn { box-sizing: border-box;width:97vw;height:auto;z-index:100;padding:9vh 9vw 9vh 9vw;background-color: rgba(255,255,253,0.8);color:black;}
 .opn img,.tripic img:hover{cursor:	default;-webkit-filter: brightness(100%);filter:brightness(100%); }
-.fb_iframe_widget{width:100%;}
+
 
 .opn .features,.opn .info2 ,.opn .picinfo{display:block;}
 .opn .hfz:before{content:"Designer - 黃梵真";font-size:40px; 	text-shadow:2px 2px 5px rgba(0,0,0,0.8);}
@@ -83,7 +91,7 @@ body{
 	width:100vw;
 	height:59vw;
 	}
-	
+
 .opn .hfz:before{font-size:30px;}
 .opn { width:100vw; }
 .picinfo{margin-top:20px;height:auto;font-size:25px;font-style:italic;	text-shadow:2px 2px 5px rgba(0,0,0,0.8);}

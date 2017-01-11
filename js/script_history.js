@@ -12,20 +12,23 @@ $(function(){
 // map2 change
 $(function(){
   $("#map2_btn").click(function() {
+    var width = $(window).width();
     if($(this).hasClass("click")){
       $(this).removeClass("click");
       $("#w_map").attr("src","img/history/map.png");
-      $("#map h5").css("display", "block");
+      $("#map h5").css("visibility", "visible");
+      if(width > 420){
       $(".mark").css("display", "inline-block");
       $("#DM_word").css("display", "block");
       $("#HL_word").css("display", "block");
+      }
     }
     else{
       $(this).addClass("click");
       $(".mark").css("display", "none");
       $("#DM_word").css("display", "none");
       $("#HL_word").css("display", "none");
-      $("#map h5").css("display", "none");
+      $("#map h5").css("visibility", "hidden");
       $("#w_map").attr("src","img/history/map2.png");
       return false;
     }
@@ -116,8 +119,6 @@ $(function(){
       $(".heart").css("margin-bottom", "-230px");
 	  $(".heart").css("margin-top", 0);
 	  $(".heart").css("margin-left", 0.9*width);
-    }
-    else if(scrollTop > (bottom+year_title) ){
     }
     else{
       $(".heart").css("position", "fixed");

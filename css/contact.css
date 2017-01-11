@@ -32,6 +32,13 @@
   width: 300px;
   margin-top: 20px;
 }
+#example-messages::-webkit-scrollbar{
+  width: 0.7em;
+  background-color: #222222;
+}
+#example-messages::-webkit-scrollbar-thumb {
+  background-color: #dddddd;
+}
 #example-messages{
   list-style: none;
   margin: 0px;

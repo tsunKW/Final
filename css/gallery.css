@@ -4,6 +4,8 @@ body{
 	background: -moz-linear-gradient(black,black,black,#070326,#5c3041,#fbdeb6,white,white,white);
 	background: linear-gradient(black,black,black,#070326,#5c3041,#fbdeb6,white,white,white);
 	width:100vw;height:auto;
+		transition-property:height ;transition-duration:.2s;transition-timing-function:linear;
+
 }
 .none{display:none;}
 #Spot/*主視覺滿版兼MENU*/{	background-image: url(../img/bg/21.jpg);}

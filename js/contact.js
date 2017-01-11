@@ -30,7 +30,7 @@ $(document).ready(function(){
   });
 
   // Add a callback that is triggered for each chat message.
-  dbRef.limitToLast(10).on('child_added', function (snapshot) {
+  dbRef.limitToLast(20).on('child_added', function (snapshot) {
     //GET DATA
     var data = snapshot.val();
     var username = data.name || "anonymous";

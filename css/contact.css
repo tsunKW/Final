@@ -1,0 +1,84 @@
+#Spot/*主視覺滿版兼MENU*/
+{	background-image: url(../img/bg/spot_contact.png); }
+
+
+#full{
+  background-image: url(../img/bg/contact.jpg);
+  height: 100vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+.chat_title{
+  width: 100%;
+  height: 150px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border: 3px white;
+  border-style:dashed;
+}
+.title_text{
+  padding: 0;
+  font-size: 3.5vw;
+  margin: 5vh 0 0 32vw;
+}
+.name{
+  margin-top: -45px;
+  margin-bottom: 20px;
+}
+#nameInput{
+  font-size: 15px;
+}
+#messageInput{
+  font-size: 20px;
+  width: 300px;
+  margin-top: 20px;
+}
+#example-messages{
+  list-style: none;
+  margin: 0px;
+  padding: 20px;
+  height: 300px;
+  overflow: auto;
+  color: white;
+}
+#example-messages li {
+    font-family: Roboto;
+    font-size: 120%;
+    font-weight: 300;
+    margin-bottom: 10px;
+    line-height: 24px;
+}
+#example-messages li:last-child {
+    margin: 0px;
+}
+#example-messages .example-chat-username {
+    margin-right: 10px;
+}
+
+@media only screen and (min-width: 1280px) {
+  .title_text{
+    font-size: 50px;
+    margin: 25px 0 0 400px;
+  }
+}
+@media only screen and (max-width: 780px) {
+	#Spot{
+			background-position:50% 10%;
+	}
+  .title_text{
+    font-size: 5vw;
+    margin: 5vh 0 0 27vw;
+  }
+  .name{
+    margin-top: -55px;
+    margin-bottom: 30px;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .title_text{
+    font-size: 8vw;
+    margin: 5vh 0 0 13vw;
+  }
+  .message{
+    margin-top: -30px;
+  }
+}

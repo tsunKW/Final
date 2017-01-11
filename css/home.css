@@ -29,21 +29,22 @@ body{
 		-webkit-filter: drop-shadow(0 0 2px rgba(255,255,230,0.8));
   		filter: drop-shadow(0 0 2px rgba(255,255,230,0.8));
 		}	
-	#proud 
-	{color: black; 
+	.proud 
+	{color: white; 
 	line-height:35px;
 	font-family: Roboto,sans-serif;
 	font-weight:light;
 	border-color:rgba(0,0,0,0.5);
 	}
-	#proud a
-	{	color:black;}
-	#proud a:hover
+	.proud a
+	{	color:white;}
+		.black a{	color:black;}
+	.black a:hover
 	{
 		text-shadow: 0px 0px 5px 5px rgba(0,0,0,0.5);		
 		-webkit-filter: drop-shadow(0 0 2px rgba(0,0,0,0.8));
   		filter: drop-shadow(0 0 2px rgba(0,0,0,0.8));}	
-	.black{ color: black; border:hidden;}
+	.black{ color: black; } .white{ color: white;}
 #rainbow{
 	margin-top:20vh;
 	width:100%;

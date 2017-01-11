@@ -24,6 +24,34 @@ li{
 	list-style: none;	transition-property:box-shadow background-color;transition-duration:.2s;transition-timing-function:linear;
 }
 /*修法進度*/
+.explane{
+	background: rgb(249,49,49);
+	background: -moz-linear-gradient(-45deg,  rgba(249,49,49,1) 0%, rgba(255,152,35,1) 24%, rgba(244,244,34,1) 43%, rgba(32,234,42,1) 62%, rgba(32,140,234,1) 78%, rgba(178,32,232,1) 100%);
+	background: -webkit-linear-gradient(-45deg,  rgba(249,49,49,1) 0%,rgba(255,152,35,1) 24%,rgba(244,244,34,1) 43%,rgba(32,234,42,1) 62%,rgba(32,140,234,1) 78%,rgba(178,32,232,1) 100%);
+	background: linear-gradient(135deg,  rgba(249,49,49,1) 0%,rgba(255,152,35,1) 24%,rgba(244,244,34,1) 43%,rgba(32,234,42,1) 62%,rgba(32,140,234,1) 78%,rgba(178,32,232,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f93131', endColorstr='#b220e8',GradientType=1 );
+
+	position: absolute;
+	width: 65vw;
+	height: 20vw;
+	max-width: 70%;
+	margin-left: 15%;
+	margin-right: 15%;
+	margin-top: 17%;
+	border-radius: 10px;
+	border: white 15px;
+	border-style: double;
+	display: none;
+}
+.explane img{
+	width: 30px;
+	float: right;
+}
+.explane img:hover{cursor: pointer;}
+.explane p{
+	border: 0;
+	font-size: 3vw;
+}
 ul{padding:0;}
 #area1{
 	padding-top: 10%;
@@ -134,7 +162,7 @@ ul{padding:0;}
 #ori2{max-width: 55%;}
 #ori3{max-width: 50%;}
 .law strong{
-	color: #ffde00;
+	color: #cb0035;
 }
 .law h3{
 	margin-top: 10%;
@@ -279,4 +307,12 @@ ul{padding:0;}
 }
 @media only screen and (max-width: 420px) {
 	/*修法進度*/
+}
+
+@media only screen and (min-width: 780px) {
+	.steps_icon:hover{
+		cursor: pointer;
+		-webkit-filter: drop-shadow(0 0 7px rgba(255,255,230,0.9));
+		filter: drop-shadow(0 0 7px rgba(255,255,230,0.9));
+	}
 }

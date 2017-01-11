@@ -1,12 +1,20 @@
 #Spot/*主視覺滿版兼MENU*/
 {	background-image: url(../img/bg/spot_contact.png); }
 
+body{
+	background: -webkit-linear-gradient(black,black,black,#070326,#5c3041,#fbdeb6,white,white,white);
+	background: -o-linear-gradient(black,black,black,#070326,#5c3041,#fbdeb6,white,white,white);
+	background: -moz-linear-gradient(black,black,black,#070326,#5c3041,#fbdeb6,white,white,white);
+	background: linear-gradient(black,black,black,#070326,#5c3041,#fbdeb6,white,white,white);height:auto;
+	transition-property:height ;transition-duration:.2s;transition-timing-function:linear;
+}
 
 #full{
   background-image: url(../img/bg/contact.jpg);
   height: 100vh;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 10vh;
 }
 .chat_title{
   width: 100%;

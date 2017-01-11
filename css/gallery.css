@@ -9,7 +9,6 @@ body{
 }
 .none{display:none;}
 #Spot/*主視覺滿版兼MENU*/{	background-image: url(../img/bg/21.jpg);}
-#like00,#like01,#like02,#like03,#like04,#like06,#like57,#like09{}
 .like{
 	color: black;
 	padding: 0;
@@ -73,6 +72,7 @@ body{
 .opn { width:1254px;z-index:100;margin:0;}
 }
 @media only screen and (max-width: 780px) {
+	#like00,#like01,#like02,#like03,#like04,#like06,#like57,#like09{display: none;}
 .tripic
 {	/*並排pic框*/
 	margin:3vw 2vw 3vw 2vw ;

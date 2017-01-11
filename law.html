@@ -2,6 +2,7 @@
 
 <html>
 <head>
+
    <link rel="stylesheet" type="text/css" href="css/animate.css">
    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
@@ -9,6 +10,14 @@
    <title>Legislation</title>
    <link rel="shortcut icon" type="image/x-icon" href="img/fair.ico"/>
    <link rel="bookmark" href="img/fair.ico"/>
+
+<!-- sign up/in -->
+   <!-- Roboto Font -->
+   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+   <!-- Firebase JS -->
+   <script src="https://www.gstatic.com/firebasejs/3.6.4/firebase.js"></script>
+<!-- sign up/in end-->
+
 </head>
 
 <body style="margin:0 0 0 0;">
@@ -23,11 +32,48 @@
     <link href="css/temp.css" rel="stylesheet" type="text/css">
     <link href="css/style_law.css" rel="stylesheet" type="text/css">
 
-<!-- sign up/in -->
-<a id="user_sign" href="#" onclick="window.open('sign.html','Sign Up/In',config='height=600,width=500,top=100,left=100');">
-  <img id="user_icon" src="img/item/user.png" alt="user">
-  Sign Up/In
-</a>
+
+
+<!-- /////////////sign up/in//////////// -->
+  <img id="user_icon" src="img/item/user.png" alt="user"><!-- sign in icon -->
+  <!-- card -->
+<div id="sign">
+  <div id="full_card">
+
+  <div class="card_title">
+    <img id="sign_pic" src="img/sign.jpg" alt="sign_pic">
+    <h2 class="title_text">SIGN UP/IN</h2>
+  </div>
+
+  <div class="card_body">
+    <!-- text field -->
+      <div class="move">
+        <input class="card_input" type="text" placeholder="Email" id="email">
+      </div>
+      <div class="move">
+        <input class="card_input" type="password" placeholder="Password" id="password">
+      </div>
+
+    <!-- Sign Information -->
+    <div id="sign-info">No one login...</div>
+
+        <ul id="card1_btn">
+          <li><button class="card_button colorset" id="btnSignIn">
+              Sign In
+            </button></li>
+          <li><button class="card_button" id="btnSignUp">
+              Sign Up
+            </button></li>
+          <li><button class="card_button" id ="btnSignOut" disabled>
+              Sign Out
+            </button></li>
+        </ul>
+    </div><!-- card_body -->
+  </div><!--card end-->
+</div><!-- id=sign -->
+<!-- /////////////sign up/in//////////// -->
+
+
 
   <ul id="menu"><li><a href="index.html">Home</a><!--這樣寫比較沒有不明空格-->
     </li><li><a href="#">Intro</a>
@@ -237,3 +283,4 @@ E-Mail： toygame@tea.ntue.edu.tw<br/ >
 
 <script src="js/jquery-3.1.1.min.js"></script>
 <script src="js/temp.js"></script>
+<script src="js/firebase.js"></script><!-- firebase -->

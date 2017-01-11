@@ -8,6 +8,14 @@
    <title>Stand with us</title>
    <link rel="shortcut icon" type="image/x-icon" href="img/fair.ico"/>
    <link rel="bookmark" href="img/fair.ico"/>
+
+   <!-- sign up/in -->
+      <!-- Roboto Font -->
+      <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+      <!-- Firebase JS -->
+      <script src="https://www.gstatic.com/firebasejs/3.6.4/firebase.js"></script>
+   <!-- sign up/in end-->
+
 </head>
 
 <body style="margin:0 0 0 0;">
@@ -17,12 +25,60 @@
 <div id="Spot">
 <header><!--header大選單-->
     <!--GGsearch--><div id="logo"><div id="search"><gcse:search></gcse:search></div></div><!--GGsearch -->
+
+    <!-- /////////////sign up/in//////////// -->
+      <img id="user_icon" src="img/item/user.png" alt="user"><!-- sign in icon -->
+      <!-- card -->
+    <div id="sign">
+      <div id="full_card">
+
+      <div class="card_title">
+        <img id="sign_pic" src="img/sign.jpg" alt="sign_pic">
+        <h2 class="title_text">SIGN UP/IN</h2>
+      </div>
+
+      <div class="card_body">
+        <!-- text field -->
+          <div class="move">
+            <input class="card_input" type="text" placeholder="Email" id="email">
+          </div>
+          <div class="move">
+            <input class="card_input" type="password" placeholder="Password" id="password">
+          </div>
+          <!-- like pic*4 --><!-- log in -->
+          <div id="like_text">Recent like in gallery :</div>
+          <ul id="like_pic">
+            <li><img src="" alt="pic1" id="pic1" class="user-pic"></li>
+            <li><img src="" alt="pic2" id="pic2" class="user-pic"></li>
+            <li><img src="" alt="pic3" id="pic3" class="user-pic"></li>
+            <li><img src="" alt="pic3" id="pic4" class="user-pic"></li>
+          </ul>
+
+        <!-- Sign Information -->
+        <div id="sign-info">No one login...</div>
+
+            <ul id="card1_btn">
+              <li><button class="card_button colorset" id="btnSignIn">
+                  Sign In
+                </button></li>
+              <li><button class="card_button" id="btnSignUp">
+                  Sign Up
+                </button></li>
+              <li><button class="card_button" id ="btnSignOut" disabled>
+                  Sign Out
+                </button></li>
+            </ul>
+        </div><!-- card_body -->
+      </div><!--card end-->
+    </div><!-- id=sign -->
+    <!-- /////////////sign up/in//////////// -->
+
   <ul id="menu"><li>Home<!--這樣寫比較沒有不明空格-->
     </li><li><a href="intro.html">Intro </a>
-    </li><li><a href="law.html">Legislation</a> 
-    </li><li><a href="history.html">History</a> 
-    </li><li><a href="gallery.html">Gallery</a> 
-    </li><li><a href="contact.html">Contact</a> 
+    </li><li><a href="law.html">Legislation</a>
+    </li><li><a href="history.html">History</a>
+    </li><li><a href="gallery.html">Gallery</a>
+    </li><li><a href="contact.html">Contact</a>
     </li></ul>
 </header><!--header大選單-->
 <!--nav漢堡-->
@@ -35,11 +91,11 @@
                             </div>
                	  			<ul><li><gcse:search></gcse:search><link href="css/temp.css" rel="stylesheet" type="text/css">
                             </li><li><a href="index.html">Home</a><!--這樣寫比較沒有不明空格-->
-                            </li><li><a href="intro.html">Intro</a> 
-                            </li><li><a href="law.html">Legislation</a> 
-                            </li><li><a href="history.html">History</a> 
-                            </li><li><a href="gallery.html">Gallery</a> 
-                  			</li><li><a href="contact.html">Contact</a> 
+                            </li><li><a href="intro.html">Intro</a>
+                            </li><li><a href="law.html">Legislation</a>
+                            </li><li><a href="history.html">History</a>
+                            </li><li><a href="gallery.html">Gallery</a>
+                  			</li><li><a href="contact.html">Contact</a>
                 			</li></ul>
 </nav><!--nav漢堡-->
 <div class="title animated  fadeIn ">Fear not this night</div>
@@ -50,14 +106,14 @@
 <!--^^^^主視覺兼MENU滿版-->
 
 
-<!--不滿版文章邊界--><span id="cont"></span><div id="Max" > 
+<!--不滿版文章邊界--><span id="cont"></span><div id="Max" >
 <div class="textbox">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/yZ9APXUVaWg" frameborder="0" allowfullscreen></iframe>
 </div>
 <div class="textbox">
 <span class="origin"><h3>一般人與同志朋友們的心跳，並沒有不一樣</h3>遇到不被理解的事情時，都會有一樣難過的情緒。<br/ ><br/ >台灣有很多的同志朋友，是在這樣的壓力下努力的活著。<br/ >他們並沒有做錯任何事情，卻被這樣對待著。<br/ ><br/ >希望大家用同理心，去聆聽他們的心跳聲。<br/ ></span><span class="break"><h3>一般人與同志朋友們的心跳<br/>並沒有不一樣</h3>遇到不被理解的事情時<br/ >都會有一樣難過的情緒<br/ ><br/ >台灣有很多的同志朋友<br/ >是在這樣的壓力下努力的活著<br/ >他們並沒有做錯任何事情<br/ >卻被這樣對待著<br/ ><br/ >希望大家用同理心<br/ >去聆聽他們的心跳聲<br/ ></span>
 <a href="https://www.facebook.com/hashtag/相挺為平權全民稱同志" target="new">#相挺為平權，全民稱同志</a><br/ >
-<a href="https://www.facebook.com/hashtag/讓生命不再逝去為婚姻平權站出來" target="new">#讓生命不再逝去，為婚姻平權站出來</a> 
+<a href="https://www.facebook.com/hashtag/讓生命不再逝去為婚姻平權站出來" target="new">#讓生命不再逝去，為婚姻平權站出來</a>
 </div>
 <div class="textbox" id="cake">
 <h3>彩虹蛋糕</h3><br/ >
@@ -67,7 +123,7 @@
 無論我有沒有美麗的雙眼或嘴巴，四肢是否健全或愛上誰，都還是父母的孩子、是孩子的父母，是朋友、同事或鄰居。<br/ >也許我們不太一樣，但卻沒什麼不同。
 我們都值得 ── 去愛與被愛。<br/ ><a href="https://www.facebook.com/hashtag/支持婚姻平權" target="new">#支持婚姻平權</a></div>
 </div>
-		
+
 <div class="textbox proud white">
 <h3>Proud to Love</h3><br/ >
 <div class="duotext"><span style="font-style:italic;">-Because of I'm tired of hiding...and tired of lying by omission.<br/ >
@@ -112,3 +168,4 @@ E-Mail： toygame@tea.ntue.edu.tw<br/ >
 
 <script src="js/jquery-3.1.1.min.js"></script>
 <script src="js/temp.js"></script>
+<script src="js/firebase.js"></script><!-- firebase -->

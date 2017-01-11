@@ -13,9 +13,8 @@ $(function(){
   var dbLogIn = firebase.database().ref().child('login');
   var dbUser = firebase.database().ref().child('user');
   var dbRef = firebase.database().ref();
-
-  var photoURL;
-  var $img = $('img');
+  //card input
+  var $input = $(".card_input");
 
 
   // REGISTER DOM ELEMENTS
@@ -26,38 +25,12 @@ $(function(){
   const $btnSignOut = $('#btnSignOut');
   const $btnSubmit = $('#btnSubmit');
   const $signInfo = $('#sign-info');
+  //sign in
+  const $signPic = $('#sign_pic');
 
 
   var storageRef = firebase.storage().ref();
 
-  function handleFileSelect(evt) {
-    evt.stopPropagation();
-    evt.preventDefault();
-    var file = evt.target.files[0];
-
-    var metadata = {
-      'contentType': file.type
-    };
-
-    // Push to child path.
-    // [START oncomplete]
-    storageRef.child('images/' + file.name).put(file, metadata).then(function(snapshot) {
-      console.log('Uploaded', snapshot.totalBytes, 'bytes.');
-      console.log(snapshot.metadata);
-      photoURL = snapshot.metadata.downloadURLs[0];
-      console.log('File available at', photoURL);
-    }).catch(function(error) {
-      // [START onfailure]
-      console.error('Upload failed:', error);
-      // [END onfailure]
-    });
-    // [END oncomplete]
-  }
-
-  window.onload = function() {
-    $file.change(handleFileSelect);
-    // $file.disabled = false;
-  }
 
   // SignIn/SignUp/SignOut Button status
   var user = firebase.auth().currentUser;
@@ -100,8 +73,6 @@ $(function(){
     });
     promise.then(function(user){
       console.log("SignUp user is "+user.email);
-      // const dbUserid = dbUser.child(user.uid);
-      // dbUserid.push({email:user.email, Occupation:'', Age:'', Descriptions:''});
     });
   });
 
@@ -118,15 +89,21 @@ $(function(){
       $btnSignIn.attr('disabled', 'disabled');
       $btnSignUp.attr('disabled', 'disabled');
       $btnSignOut.removeAttr('disabled')
-      $profileName.html(user.displayName);
-      $profileEmail.html(user.email);
 
-      $(document).delay(2000).close();
+      //change button
+      $btnSignIn.removeClass("colorset");
+      //change pic
+      $signPic.attr("src", "img/sign_in.jpg");
+      $(".title_text").css("margin-top", "-50px");
+      $(".title_text").html("WELCOME !");
+      //user_icon change
+      $("#user_icon").attr("src","img/item/user_in.png")
 
     } else{
     console.log("not logged in");
-      $profileName.html("N/A");
-      $profileEmail.html('N/A');
+
+    //user_icon change
+    $("#user_icon").attr("src","img/item/user.png")
 
     }
   });
@@ -139,8 +116,17 @@ $(function(){
     $btnSignOut.attr('disabled', 'disabled');
     $btnSignIn.removeAttr('disabled');
     $btnSignUp.removeAttr('disabled');
-    $messageList.empty();
-    location.reload();
+
+    //clear input
+    $input.val('');
+    //change button
+    $btnSignIn.addClass("colorset");
+    //change pic
+    $signPic.attr("src", "img/sign.jpg");
+    $(".title_text").css("margin-top", "-190px");
+    $(".title_text").html("SIGN UP/IN");
+
+    // location.reload();
   });
 
 

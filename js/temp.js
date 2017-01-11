@@ -1,5 +1,4 @@
-
- //hamburger slide
+//hamburger slide
  $(function(){
    $(".site-ham #hamburger").click(function(){
      var $ul = $(this).parent("nav").children("ul");
@@ -16,7 +15,7 @@
  });
  $(document).ready(function(){
 	$('#hamburger').click(function(){
-		$(this).toggleClass('open');		
+		$(this).toggleClass('open');
 	});
 });
 
@@ -32,5 +31,21 @@
   $("#top").click(function(){
     $("html,body").animate({scrollTop:0},800);
       return false;
+  });
+});
+
+//appear sign in card
+$(function(){
+  $("#user_icon").click(function(){
+    if(
+      $(this).hasClass("sign-click")){
+      $(this).removeClass("sign-click");
+      $("#full_card").slideUp();
+    }
+    else{
+      $(this).addClass("sign-click");
+      $("#full_card").slideDown();
+      return false;
+    }
   });
 });

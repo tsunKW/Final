@@ -2,9 +2,8 @@ body{
 	background: -webkit-linear-gradient(black,black,black,#070326,#5c3041,#fbdeb6,white,white,white);
 	background: -o-linear-gradient(black,black,black,#070326,#5c3041,#fbdeb6,white,white,white);
 	background: -moz-linear-gradient(black,black,black,#070326,#5c3041,#fbdeb6,white,white,white);
-	background: linear-gradient(black,black,black,#070326,#5c3041,#fbdeb6,white,white,white);
-	width:100vw;height:auto;
-		transition-property:height ;transition-duration:.2s;transition-timing-function:linear;
+	background: linear-gradient(black,black,black,#070326,#5c3041,#fbdeb6,white,white,white);height:auto;
+	transition-property:height ;transition-duration:.2s;transition-timing-function:linear;
 
 }
 .none{display:none;}
@@ -40,7 +39,7 @@ body{
 .info2 ,.features{display:none;}
 .opn { box-sizing: border-box;width:97vw;height:auto;z-index:100;padding:9vh 9vw 9vh 9vw;background-color: rgba(255,255,253,0.8);color:black;}
 .opn img,.tripic img:hover{cursor:	default;-webkit-filter: brightness(100%);filter:brightness(100%); }
-
+.fb_iframe_widget{width:100%;}
 
 .opn .features,.opn .info2 ,.opn .picinfo{display:block;}
 .opn .hfz:before{content:"Designer - 黃梵真";font-size:40px; 	text-shadow:2px 2px 5px rgba(0,0,0,0.8);}

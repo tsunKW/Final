@@ -8,6 +8,14 @@
    <title>Stand with us//Gallery</title>
    <link rel="shortcut icon" type="image/x-icon" href="img/fair.ico"/>
    <link rel="bookmark" href="img/fair.ico"/>
+
+   <!-- sign up/in -->
+      <!-- Roboto Font -->
+      <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+      <!-- Firebase JS -->
+      <script src="https://www.gstatic.com/firebasejs/3.6.4/firebase.js"></script>
+   <!-- sign up/in end-->
+
 </head>
 
 <body style="margin:0 0 0 0;">
@@ -24,6 +32,55 @@
 <div id="Spot">
 <header><!--header大選單-->
     <!--GGsearch--><div id="logo"><div id="search"><gcse:search></gcse:search></div></div><!--GGsearch -->
+
+    <!-- /////////////sign up/in//////////// -->
+      <img id="user_icon" src="img/item/user.png" alt="user"><!-- sign in icon -->
+      <!-- card -->
+    <div id="sign">
+      <div id="full_card">
+
+      <div class="card_title">
+        <img id="sign_pic" src="img/sign.jpg" alt="sign_pic">
+        <h2 class="title_text">SIGN UP/IN</h2>
+      </div>
+
+      <div class="card_body">
+        <!-- text field --><!-- log out -->
+          <div class="move">
+            <input class="card_input" type="text" placeholder="Email" id="email">
+          </div>
+          <div class="move">
+            <input class="card_input" type="password" placeholder="Password" id="password">
+          </div>
+        <!-- like pic*4 --><!-- log in -->
+        <div id="like_text">Recent like in gallery :</div>
+        <ul id="like_pic">
+          <li><img src="" alt="pic1" id="pic1" class="user-pic"></li>
+          <li><img src="" alt="pic2" id="pic2" class="user-pic"></li>
+          <li><img src="" alt="pic3" id="pic3" class="user-pic"></li>
+          <li><img src="" alt="pic3" id="pic4" class="user-pic"></li>
+        </ul>
+
+        <!-- Sign Information -->
+        <div id="sign-info">No one login...</div>
+
+            <ul id="card1_btn">
+              <li><button class="card_button colorset" id="btnSignIn">
+                  Sign In
+                </button></li>
+              <li><button class="card_button" id="btnSignUp">
+                  Sign Up
+                </button></li>
+              <li><button class="card_button" id ="btnSignOut" disabled>
+                  Sign Out
+                </button></li>
+            </ul>
+        </div><!-- card_body -->
+      </div><!--card end-->
+    </div><!-- id=sign -->
+    <!-- /////////////sign up/in//////////// -->
+
+
   <ul id="menu"><li><a href="index.html">Home</a><!--這樣寫比較沒有不明空格-->
     </li><li><a href="intro.html">Intro </a>
     </li><li><a href="law.html">Legislation</a>
@@ -55,11 +112,20 @@
 
 </div>
 <!--^^^^主視覺兼MENU滿版-->
-<!--不滿版文章邊界--><span id="cont"></span><div id="Max" ><!--
---><div class="textbox"><ul class="designer"><li id="toall">ALL</li><li id="tohfz">黃梵真</li><li id="toel">Enan Lin</li><li id="tooth">OTHERS</li></ul></div><!--
---><div class="textbox"><!----><div class="tripic "><!--
+<!--不滿版文章邊界--><span id="cont"></span><div id="Max" >
+<div class="textbox"><ul class="designer"><li id="toall">ALL</li><li id="tohfz">黃梵真</li><li id="toel">Enan Lin</li><li id="tooth">OTHERS</li></ul></div>
+<div class="textbox"><!--
+
+ --><div class="tripic "><!--
 圖片框--><div class="show hfz"><img src="img/gallery/01hfz/00.jpg" width="1600" height="947"></div><!--
-按鈕--><div class="features"><ul><a href="img/gallery/full/01hfzF/00.jpg" target="new"><li>FULL PIC</li></a><a href="https://www.facebook.com/profile.php?id=100009718714688" target="new"><li>DESIGNER</li></a><li class="like" id="like00">LIKE</li></ul>
+按鈕--><div class="features">
+<ul>
+<a class="pic" href="img/gallery/full/01hfzF/00.jpg" target="new">
+  <li>FULL PIC</li></a>
+<a href="https://www.facebook.com/profile.php?id=100009718714688" target="new">
+  <li>DESIGNER</li></a>
+<li id="like00">LIKE<p class="like">❤</p></li>
+</ul>
          <!--FB按鈕--><iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fgithub.com%2Fkev0213%2FFinal%2Fblob%2Fmaster%2Fimg%2F01hfz%2F02.jpg&width=103&layout=button&action=like&size=large&show_faces=true&share=true&height=65&appId=565086427022047"width="120" height="33"  style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe></div>
         <div class="picinfo">這麼多靜靜逝去的生命，你們真的都不在乎嗎?<br>You don't really care about those who were isolated by the world. </div>
         <div class="info2">/ Don't you really care? /<br>
@@ -72,118 +138,266 @@
 文 / 婚姻平權，基本人權 圖 / 字由公寓 2.0 Liberty Apartment 2.0<br>
 <li style="margin:20px 0 50px 0;">BACK</li>
 
-<div data-href="https://kev0213.github.io/Final/" data-width="100%" data-numposts="5" class="fb-comments fb_iframe_widget fb_iframe_widget_fluid" fb-xfbml-state="rendered"><iframe id="f3609e4b8fbff84" name="f27b3f52636cdc" scrolling="no" title="Facebook Social Plugin" class="fb_ltr fb_iframe_widget_lift" src="https://www.facebook.com/plugins/comments.php?api_key=113869198637480&amp;channel_url=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2FiPrOY23SGAp.js%3Fversion%3D42%23cb%3Df2b5e022ef5b3c%26domain%3Ddevelopers.facebook.com%26origin%3Dhttps%253A%252F%252Fdevelopers.facebook.com%252Ff2f2a3ab512722c%26relation%3Dparent.parent&amp;href=https%3A%2F%2Fkev0213.github.io%2FFinal%2F&amp;locale=zh_TW&amp;numposts=5&amp;sdk=joey&amp;version=v2.8&amp;width=100%25" style="border: none;  height: 600px; width: 100%; overflow:scroll;"></iframe></div></div>
+<div data-href="https://kev0213.github.io/Final/" data-width="100%" data-numposts="5" class="fb-comments fb_iframe_widget fb_iframe_widget_fluid" fb-xfbml-state="rendered"><iframe id="f3609e4b8fbff84" name="f27b3f52636cdc" scrolling="no" title="Facebook Social Plugin" class="fb_ltr fb_iframe_widget_lift" src="https://www.facebook.com/plugins/comments.php?api_key=113869198637480&amp;channel_url=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2FiPrOY23SGAp.js%3Fversion%3D42%23cb%3Df2b5e022ef5b3c%26domain%3Ddevelopers.facebook.com%26origin%3Dhttps%253A%252F%252Fdevelopers.facebook.com%252Ff2f2a3ab512722c%26relation%3Dparent.parent&amp;href=https%3A%2F%2Fkev0213.github.io%2FFinal%2F&amp;locale=zh_TW&amp;numposts=5&amp;sdk=joey&amp;version=v2.8&amp;width=100%25" style="border: none;  height: 600px; width: 100%;"></iframe></div></div>
 </div><!---------------------------01-----><div class="tripic "><!--
 圖片框--><div class="show hfz"><img src="img/gallery/01hfz/01.jpg" width="1000" height="711"></div><!--
-按鈕--><div class="features"><ul><a href="img/gallery/full/01hfzF/01.jpg" target="new"><li>FULL PIC</li></a><a href="https://www.facebook.com/profile.php?id=100009718714688" target="new"><li>DESIGNER</li></a><li class="like" id="like01">LIKE</li></ul>
+按鈕--><div class="features">
+<ul>
+<a class="pic" href="img/gallery/full/01hfzF/01.jpg" target="new">
+  <li>FULL PIC</li></a>
+<a href="https://www.facebook.com/profile.php?id=100009718714688" target="new">
+  <li>DESIGNER</li></a>
+<li id="like01">LIKE<p class="like">❤</p></li>
+</ul>
          <!--FB按鈕--><iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fgithub.com%2Fkev0213%2FFinal%2Fblob%2Fmaster%2Fimg%2F01hfz%2F01.jpg&width=103&layout=button&action=like&size=large&show_faces=true&share=true&height=65&appId=565086427022047"width="120" height="33"  style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe></div>
         <div class="picinfo">聽你聽我 讓愛平權<br>Love is equal.</div><div class="info2">
 <li style="margin:20px 0 50px 0;">BACK</li><br><br>
-<div data-href="https://kev0213.github.io/Final/" data-width="100%" data-numposts="5" class="fb-comments fb_iframe_widget fb_iframe_widget_fluid" fb-xfbml-state="rendered"><iframe id="f3609e4b8fbff84" name="f27b3f52636cdc" scrolling="no" title="Facebook Social Plugin" class="fb_ltr fb_iframe_widget_lift" src="https://www.facebook.com/plugins/comments.php?api_key=113869198637480&amp;channel_url=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2FiPrOY23SGAp.js%3Fversion%3D42%23cb%3Df2b5e022ef5b3c%26domain%3Ddevelopers.facebook.com%26origin%3Dhttps%253A%252F%252Fdevelopers.facebook.com%252Ff2f2a3ab512722c%26relation%3Dparent.parent&amp;href=https%3A%2F%2Fkev0213.github.io%2FFinal%2F&amp;locale=zh_TW&amp;numposts=5&amp;sdk=joey&amp;version=v2.8&amp;width=100%25" style="border: none;  height: 600px; width: 100%; overflow:scroll;"></iframe></div></div>
+<div data-href="https://github.com/kev0213/Final/blob/master/img/01hfz/01.jpg" data-numposts="5" class="fb-comments fb_iframe_widget" fb-xfbml-state="rendered"><span style="height: 187px; width: 550px;"><iframe id="f2d7d4d38b057a8" name="f5d98518771154" scrolling="no" title="Facebook Social Plugin" class="fb_ltr" src="https://www.facebook.com/plugins/comments.php?api_key=113869198637480&amp;channel_url=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2FiPrOY23SGAp.js%3Fversion%3D42%23cb%3Df30b3260fd93e6%26domain%3Ddevelopers.facebook.com%26origin%3Dhttps%253A%252F%252Fdevelopers.facebook.com%252Ffb4da77c9d7824%26relation%3Dparent.parent&amp;href=https%3A%2F%2Fgithub.com%2Fkev0213%2FFinal%2Fblob%2Fmaster%2Fimg%2F01hfz%2F01.jpg&amp;locale=zh_TW&amp;numposts=5&amp;sdk=joey&amp;version=v2.8&amp;width=550" style="border: none; overflow: hidden; height: 600px; width: 100%;"></iframe></span></div></div>
 
-</div><!---------------------------01-----><!--------------------------05-----><div class="tripic">
+</div><!---------------------------01----->
+<!--------------------------05-----><div class="tripic">
         <div class="show tyt"><img src="img/gallery/05.jpg" width="1000" height="749"></div><!--
-按鈕--><div class="features"><ul><a href="img/gallery/full/05.jpg" target="new"><li>FULL PIC</li></a><a href="https://www.facebook.com/profile.php?id=100005375522758" target="new"><li>DESIGNER</li></a><li class="like" id="like09">LIKE</li> </ul>
+按鈕--><div class="features">
+<ul>
+  <a class="pic" href="img/gallery/full/05.jpg" target="new">
+    <li>FULL PIC</li></a>
+    <a href="https://www.facebook.com/profile.php?id=100005375522758" target="new">
+    <li>DESIGNER</li></a>
+    <li id="like09">LIKE<p class="like">❤</p></li>
+</ul>
          <!--FB按鈕--><iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fgithub.com%2Fkev0213%2FFinal%2Fblob%2Fmaster%2Fimg%2F01hfz%2F02.jpg&width=103&layout=button&action=like&size=large&show_faces=true&share=true&height=65&appId=565086427022047" width="120" height="33"  style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe></div>
         <div class="picinfo">我支持婚姻平權!</div> <div class="info2">這個世界上從來沒有什麼事情本來就該是什麼模樣。<br>或許在資本社會之下，世界有它運轉的樣子，但更重要的是我們所支持的價值。<br><br>我們共同存在在這個世界上，甚至更親近的生活在同一個島嶼、城市，<br>受著同一部法律控制。<br>婚姻平權不是一個起點，也不會是終點，但這件事特別的是可以讓人保護自己所愛的。<br><br>這好像是我們這個世代的責任，<br>不斷溝通對話，讓更自由平權的價值普及。<br><br>這個世界的樣子，每一刻都不一樣。<br>也意味著，我們有機會讓世界離我們想要的樣子更近一些。<br>
 
 <li style="margin:20px 0 50px 0;">BACK</li><br>
 
-<div data-href="https://kev0213.github.io/Final/" data-width="100%" data-numposts="5" class="fb-comments fb_iframe_widget fb_iframe_widget_fluid" fb-xfbml-state="rendered"><iframe id="f3609e4b8fbff84" name="f27b3f52636cdc" scrolling="no" title="Facebook Social Plugin" class="fb_ltr fb_iframe_widget_lift" src="https://www.facebook.com/plugins/comments.php?api_key=113869198637480&amp;channel_url=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2FiPrOY23SGAp.js%3Fversion%3D42%23cb%3Df2b5e022ef5b3c%26domain%3Ddevelopers.facebook.com%26origin%3Dhttps%253A%252F%252Fdevelopers.facebook.com%252Ff2f2a3ab512722c%26relation%3Dparent.parent&amp;href=https%3A%2F%2Fkev0213.github.io%2FFinal%2F&amp;locale=zh_TW&amp;numposts=5&amp;sdk=joey&amp;version=v2.8&amp;width=100%25" style="border: none;  height: 600px; width: 100%; overflow:scroll;"></iframe></div></div>
-</div><!------------------------05-----><!---------------------------22-----><div class="tripic ">
+<div data-href="https://github.com/kev0213/Final/blob/master/img/01hfz/02.jpg" data-numposts="3" class="fb-comments fb_iframe_widget" fb-xfbml-state="rendered"><span style="height: 179px; width: 550px;"><iframe id="f202fb6441fa21c" name="f2ef45161243834" scrolling="no" title="Facebook Social Plugin" class="fb_ltr" src="https://www.facebook.com/plugins/comments.php?api_key=113869198637480&amp;channel_url=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2FiPrOY23SGAp.js%3Fversion%3D42%23cb%3Dfdedf591cba394%26domain%3Ddevelopers.facebook.com%26origin%3Dhttps%253A%252F%252Fdevelopers.facebook.com%252Ffb4da77c9d7824%26relation%3Dparent.parent&amp;href=https%3A%2F%2Fgithub.com%2Fkev0213%2FFinal%2Fblob%2Fmaster%2Fimg%2F01hfz%2F02.jpg&amp;locale=zh_TW&amp;numposts=5&amp;sdk=joey&amp;version=v2.8&amp;width=550" style="border: none; overflow: hidden; height: 600px; width: 100%;"></iframe></span></div></div>
+</div>
+<!------------------------05-----><!---------------------------22-----><div class="tripic ">
         <div class="show hfz"><img src="img/gallery/01hfz/02.jpg" width="1000" height="711"></div><!--
-按鈕--><div class="features"><ul><a href="img/gallery/full/01hfzF/02.jpg" target="new"><li>FULL PIC</li></a><a href="https://www.facebook.com/profile.php?id=100009718714688" target="new"><li>DESIGNER</li></a><li class="like" id="like02">LIKE</li></ul>
+按鈕--><div class="features">
+<ul>
+<a class="pic" href="img/gallery/full/01hfzF/02.jpg" target="new">
+  <li>FULL PIC</li></a>
+<a href="https://www.facebook.com/profile.php?id=100009718714688" target="new">
+  <li>DESIGNER</li></a>
+<li id="like02">LIKE<p class="like">❤</p></li>
+</ul>
          <!--FB按鈕--><iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fgithub.com%2Fkev0213%2FFinal%2Fblob%2Fmaster%2Fimg%2F01hfz%2F02.jpg&width=103&layout=button&action=like&size=large&show_faces=true&share=true&height=65&appId=565086427022047" width="120" height="33"  style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe></div>
         <div class="picinfo">感受社會  終結謠言</div> <div class="info2">我們的愛 沒有不同<br>
 <li style="margin:20px 0 50px 0;">BACK</li><br>
-<div data-href="https://kev0213.github.io/Final/" data-width="100%" data-numposts="5" class="fb-comments fb_iframe_widget fb_iframe_widget_fluid" fb-xfbml-state="rendered"><iframe id="f3609e4b8fbff84" name="f27b3f52636cdc" scrolling="no" title="Facebook Social Plugin" class="fb_ltr fb_iframe_widget_lift" src="https://www.facebook.com/plugins/comments.php?api_key=113869198637480&amp;channel_url=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2FiPrOY23SGAp.js%3Fversion%3D42%23cb%3Df2b5e022ef5b3c%26domain%3Ddevelopers.facebook.com%26origin%3Dhttps%253A%252F%252Fdevelopers.facebook.com%252Ff2f2a3ab512722c%26relation%3Dparent.parent&amp;href=https%3A%2F%2Fkev0213.github.io%2FFinal%2F&amp;locale=zh_TW&amp;numposts=5&amp;sdk=joey&amp;version=v2.8&amp;width=100%25" style="border: none;  height: 600px; width: 100%; overflow:scroll;"></iframe></div></div>
-</div><!---------------------------22-----><!--------------------------3333-----><div class="tripic ">
+<div data-href="https://github.com/kev0213/Final/blob/master/img/01hfz/02.jpg" data-numposts="5" class="fb-comments fb_iframe_widget" fb-xfbml-state="rendered"><span style="height: 179px; width: 550px;"><iframe id="f202fb6441fa21c" name="f2ef45161243834" scrolling="no" title="Facebook Social Plugin" class="fb_ltr" src="https://www.facebook.com/plugins/comments.php?api_key=113869198637480&amp;channel_url=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2FiPrOY23SGAp.js%3Fversion%3D42%23cb%3Dfdedf591cba394%26domain%3Ddevelopers.facebook.com%26origin%3Dhttps%253A%252F%252Fdevelopers.facebook.com%252Ffb4da77c9d7824%26relation%3Dparent.parent&amp;href=https%3A%2F%2Fgithub.com%2Fkev0213%2FFinal%2Fblob%2Fmaster%2Fimg%2F01hfz%2F02.jpg&amp;locale=zh_TW&amp;numposts=5&amp;sdk=joey&amp;version=v2.8&amp;width=550" style="border: none; overflow: hidden; height: 600px; width: 100%;"></iframe></span></div></div>
+</div>
+<!---------------------------22-----><!--------------------------3333-----><div class="tripic ">
         <div class="show hfz"><img src="img/gallery/01hfz/03.jpg" width="1000" height="1416"></div><!--
-按鈕--><div class="features"><ul><a href="img/gallery/full/01hfzF/03.jpg" target="new"><li>FULL PIC</li></a><a href="https://www.facebook.com/profile.php?id=100009718714688" target="new"><li>DESIGNER</li></a><li class="like" id="like03">LIKE</li></ul>
+按鈕--><div class="features">
+<ul>
+  <a class="pic" href="img/gallery/full/01hfzF/03.jpg" target="new">
+    <li>FULL PIC</li></a>
+  <a href="https://www.facebook.com/profile.php?id=100009718714688" target="new">
+    <li>DESIGNER</li></a>
+    <li id="like03">LIKE<p class="like">❤</p></li>
+</ul>
          <!--FB按鈕--><iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fgithub.com%2Fkev0213%2FFinal%2Fblob%2Fmaster%2Fimg%2F01hfz%2F02.jpg&width=103&layout=button&action=like&size=large&show_faces=true&share=true&height=65&appId=565086427022047"width="120" height="33"  style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe></div>
         <div class="picinfo" style="font-family:perpetua titling mt;">Love is Equal</div> <div class="info2">我們的愛 沒有不同<br>
 <li style="margin:20px 0 50px 0;">BACK</li><br>
-<div data-href="https://kev0213.github.io/Final/" data-width="100%" data-numposts="5" class="fb-comments fb_iframe_widget fb_iframe_widget_fluid" fb-xfbml-state="rendered"><iframe id="f3609e4b8fbff84" name="f27b3f52636cdc" scrolling="no" title="Facebook Social Plugin" class="fb_ltr fb_iframe_widget_lift" src="https://www.facebook.com/plugins/comments.php?api_key=113869198637480&amp;channel_url=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2FiPrOY23SGAp.js%3Fversion%3D42%23cb%3Df2b5e022ef5b3c%26domain%3Ddevelopers.facebook.com%26origin%3Dhttps%253A%252F%252Fdevelopers.facebook.com%252Ff2f2a3ab512722c%26relation%3Dparent.parent&amp;href=https%3A%2F%2Fkev0213.github.io%2FFinal%2F&amp;locale=zh_TW&amp;numposts=5&amp;sdk=joey&amp;version=v2.8&amp;width=100%25" style="border: none;  height: 600px; width: 100%; overflow:scroll;"></iframe></div></div>
-</div><!------------------------3333-----><!--------------------------4444-----><div class="tripic ">
+
+<div data-href="https://github.com/kev0213/Final/blob/master/img/01hfz/02.jpg" data-numposts="5" class="fb-comments fb_iframe_widget" fb-xfbml-state="rendered"><span style="height: 179px; width: 550px;"><iframe id="f202fb6441fa21c" name="f2ef45161243834" scrolling="no" title="Facebook Social Plugin" class="fb_ltr" src="https://www.facebook.com/plugins/comments.php?api_key=113869198637480&amp;channel_url=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2FiPrOY23SGAp.js%3Fversion%3D42%23cb%3Dfdedf591cba394%26domain%3Ddevelopers.facebook.com%26origin%3Dhttps%253A%252F%252Fdevelopers.facebook.com%252Ffb4da77c9d7824%26relation%3Dparent.parent&amp;href=https%3A%2F%2Fgithub.com%2Fkev0213%2FFinal%2Fblob%2Fmaster%2Fimg%2F01hfz%2F02.jpg&amp;locale=zh_TW&amp;numposts=5&amp;sdk=joey&amp;version=v2.8&amp;width=550" style="border: none; overflow: hidden; height: 600px; width: 100%;"></iframe></span></div></div>
+</div>
+<!------------------------3333-----><!--------------------------4444-----><div class="tripic ">
         <div class="show hfz"><img src="img/gallery/01hfz/04.jpg" width="1000" height="710"></div><!--
-按鈕--><div class="features"><ul><a href="img/gallery/full/01hfzF/04.jpg" target="new"><li>FULL PIC</li></a><a href="https://www.facebook.com/profile.php?id=100009718714688" target="new"><li>DESIGNER</li></a><li class="like" id="like04">LIKE</li></ul>
+按鈕--><div class="features">
+<ul>
+  <a class="pic" href="img/gallery/full/01hfzF/04.jpg" target="new">
+    <li>FULL PIC</li></a>
+    <a href="https://www.facebook.com/profile.php?id=100009718714688" target="new">
+      <li>DESIGNER</li></a>
+      <li id="like04">LIKE<p class="like">❤</p></li>
+</ul>
          <!--FB按鈕--><iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fgithub.com%2Fkev0213%2FFinal%2Fblob%2Fmaster%2Fimg%2F01hfz%2F02.jpg&width=103&layout=button&action=like&size=large&show_faces=true&share=true&height=65&appId=565086427022047" width="120" height="33"  style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe></div>
         <div class="picinfo">法律不該為偏見服務／讓愛平權</div> <div class="info2">終結謠言<br>
 <li style="margin:20px 0 50px 0;">BACK</li><br>
-<div data-href="https://kev0213.github.io/Final/" data-width="100%" data-numposts="5" class="fb-comments fb_iframe_widget fb_iframe_widget_fluid" fb-xfbml-state="rendered"><iframe id="f3609e4b8fbff84" name="f27b3f52636cdc" scrolling="no" title="Facebook Social Plugin" class="fb_ltr fb_iframe_widget_lift" src="https://www.facebook.com/plugins/comments.php?api_key=113869198637480&amp;channel_url=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2FiPrOY23SGAp.js%3Fversion%3D42%23cb%3Df2b5e022ef5b3c%26domain%3Ddevelopers.facebook.com%26origin%3Dhttps%253A%252F%252Fdevelopers.facebook.com%252Ff2f2a3ab512722c%26relation%3Dparent.parent&amp;href=https%3A%2F%2Fkev0213.github.io%2FFinal%2F&amp;locale=zh_TW&amp;numposts=5&amp;sdk=joey&amp;version=v2.8&amp;width=100%25" style="border: none;  height: 600px; width: 100%; overflow:scroll;"></iframe></div></div>
-</div><!------------------------44-----><!--------------------------12-----><div class="tripic">
+
+<div data-href="https://github.com/kev0213/Final/blob/master/img/01hfz/02.jpg" data-numposts="5" class="fb-comments fb_iframe_widget" fb-xfbml-state="rendered"><span style="height: 179px; width: 550px;"><iframe id="f202fb6441fa21c" name="f2ef45161243834" scrolling="no" title="Facebook Social Plugin" class="fb_ltr" src="https://www.facebook.com/plugins/comments.php?api_key=113869198637480&amp;channel_url=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2FiPrOY23SGAp.js%3Fversion%3D42%23cb%3Dfdedf591cba394%26domain%3Ddevelopers.facebook.com%26origin%3Dhttps%253A%252F%252Fdevelopers.facebook.com%252Ffb4da77c9d7824%26relation%3Dparent.parent&amp;href=https%3A%2F%2Fgithub.com%2Fkev0213%2FFinal%2Fblob%2Fmaster%2Fimg%2F01hfz%2F02.jpg&amp;locale=zh_TW&amp;numposts=5&amp;sdk=joey&amp;version=v2.8&amp;width=550" style="border: none; overflow: hidden; height: 600px; width: 100%;"></iframe></span></div></div>
+</div>
+<!------------------------44-----><!--------------------------12-----><div class="tripic">
         <div class="show syb"><img src="img/gallery/12.jpg" width="1000" height="750"></div><!--
-按鈕--><div class="features"><ul><a href="img/gallery/full/12.jpg" target="new"><li>FULL PIC</li></a><a href="https://www.instagram.com/starrybird_writing/" target="new"><li>DESIGNER</li></a><li class="like" id="like09">LIKE</li> </ul>
+按鈕--><div class="features">
+<ul>
+  <a class="pic" href="img/gallery/full/12.jpg" target="new">
+    <li>FULL PIC</li></a>
+    <a href="https://www.instagram.com/starrybird_writing/" target="new">
+    <li>DESIGNER</li></a>
+    <li id="like09">LIKE<p class="like">❤</p></li>
+</ul>
          <!--FB按鈕--><iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fgithub.com%2Fkev0213%2FFinal%2Fblob%2Fmaster%2Fimg%2F01hfz%2F02.jpg&width=103&layout=button&action=like&size=large&show_faces=true&share=true&height=65&appId=565086427022047" width="120" height="33"  style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe></div>
         <div class="picinfo">「自由並不只是剪斷鐵鍊，而是活在尊重且爭取他人自由的道路上。」</div> <div class="info2">「For to be free is not merely to cast off one's chains, but to live in a way that respects and enhances the freedom of others.」<br>Nelson Mandela<br>
 <li style="margin:20px 0 50px 0;">BACK</li><br>
-<div data-href="https://kev0213.github.io/Final/" data-width="100%" data-numposts="5" class="fb-comments fb_iframe_widget fb_iframe_widget_fluid" fb-xfbml-state="rendered"><iframe id="f3609e4b8fbff84" name="f27b3f52636cdc" scrolling="no" title="Facebook Social Plugin" class="fb_ltr fb_iframe_widget_lift" src="https://www.facebook.com/plugins/comments.php?api_key=113869198637480&amp;channel_url=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2FiPrOY23SGAp.js%3Fversion%3D42%23cb%3Df2b5e022ef5b3c%26domain%3Ddevelopers.facebook.com%26origin%3Dhttps%253A%252F%252Fdevelopers.facebook.com%252Ff2f2a3ab512722c%26relation%3Dparent.parent&amp;href=https%3A%2F%2Fkev0213.github.io%2FFinal%2F&amp;locale=zh_TW&amp;numposts=5&amp;sdk=joey&amp;version=v2.8&amp;width=100%25" style="border: none;  height: 600px; width: 100%; overflow:scroll;"></iframe></div></div>
-</div><!------------------------12-----><!--------------------------6-----><div class="tripic ">
+
+<div data-href="https://github.com/kev0213/Final/blob/master/img/01hfz/02.jpg" data-numposts="3" class="fb-comments fb_iframe_widget" fb-xfbml-state="rendered"><span style="height: 179px; width: 550px;"><iframe id="f202fb6441fa21c" name="f2ef45161243834" scrolling="no" title="Facebook Social Plugin" class="fb_ltr" src="https://www.facebook.com/plugins/comments.php?api_key=113869198637480&amp;channel_url=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2FiPrOY23SGAp.js%3Fversion%3D42%23cb%3Dfdedf591cba394%26domain%3Ddevelopers.facebook.com%26origin%3Dhttps%253A%252F%252Fdevelopers.facebook.com%252Ffb4da77c9d7824%26relation%3Dparent.parent&amp;href=https%3A%2F%2Fgithub.com%2Fkev0213%2FFinal%2Fblob%2Fmaster%2Fimg%2F01hfz%2F02.jpg&amp;locale=zh_TW&amp;numposts=5&amp;sdk=joey&amp;version=v2.8&amp;width=550" style="border: none; overflow: hidden; height: 600px; width: 100%;"></iframe></span></div></div>
+</div>
+<!------------------------12-----><!--------------------------6-----><div class="tripic ">
         <div class="show hfz"><img src="img/gallery/01hfz/06.png" width="1000" height="889"></div><!--
-按鈕--><div class="features"><ul><a href="img/gallery/full/01hfzF/06.png" target="new"><li>FULL PIC</li></a><a href="https://www.facebook.com/profile.php?id=100009718714688" target="new"><li>DESIGNER</li></a><li class="like" id="like06">LIKE</li></ul>
+按鈕--><div class="features">
+<ul>
+  <a class="pic" href="img/gallery/full/01hfzF/06.png" target="new">
+    <li>FULL PIC</li></a>
+    <a href="https://www.facebook.com/profile.php?id=100009718714688" target="new">
+    <li>DESIGNER</li></a>
+    <li id="like06">LIKE<p class="like">❤</p></li>
+</ul>
          <!--FB按鈕--><iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fgithub.com%2Fkev0213%2FFinal%2Fblob%2Fmaster%2Fimg%2F01hfz%2F02.jpg&width=103&layout=button&action=like&size=large&show_faces=true&share=true&height=65&appId=565086427022047" width="120" height="33"  style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe></div>
         <div class="picinfo">「讓他她平權，像個人類。」</div> <div class="info2">終結謠言<br>
 <li style="margin:20px 0 50px 0;">BACK</li><br>
-<div data-href="https://kev0213.github.io/Final/" data-width="100%" data-numposts="5" class="fb-comments fb_iframe_widget fb_iframe_widget_fluid" fb-xfbml-state="rendered"><iframe id="f3609e4b8fbff84" name="f27b3f52636cdc" scrolling="no" title="Facebook Social Plugin" class="fb_ltr fb_iframe_widget_lift" src="https://www.facebook.com/plugins/comments.php?api_key=113869198637480&amp;channel_url=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2FiPrOY23SGAp.js%3Fversion%3D42%23cb%3Df2b5e022ef5b3c%26domain%3Ddevelopers.facebook.com%26origin%3Dhttps%253A%252F%252Fdevelopers.facebook.com%252Ff2f2a3ab512722c%26relation%3Dparent.parent&amp;href=https%3A%2F%2Fkev0213.github.io%2FFinal%2F&amp;locale=zh_TW&amp;numposts=5&amp;sdk=joey&amp;version=v2.8&amp;width=100%25" style="border: none;  height: 600px; width: 100%; overflow:scroll;"></iframe></div></div>
-</div><!------------------------6-----><!--------------------------57-----><div class="tripic">
+
+<div data-href="https://github.com/kev0213/Final/blob/master/img/01hfz/02.jpg" data-numposts="5" class="fb-comments fb_iframe_widget" fb-xfbml-state="rendered"><span style="height: 179px; width: 550px;"><iframe id="f202fb6441fa21c" name="f2ef45161243834" scrolling="no" title="Facebook Social Plugin" class="fb_ltr" src="https://www.facebook.com/plugins/comments.php?api_key=113869198637480&amp;channel_url=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2FiPrOY23SGAp.js%3Fversion%3D42%23cb%3Dfdedf591cba394%26domain%3Ddevelopers.facebook.com%26origin%3Dhttps%253A%252F%252Fdevelopers.facebook.com%252Ffb4da77c9d7824%26relation%3Dparent.parent&amp;href=https%3A%2F%2Fgithub.com%2Fkev0213%2FFinal%2Fblob%2Fmaster%2Fimg%2F01hfz%2F02.jpg&amp;locale=zh_TW&amp;numposts=5&amp;sdk=joey&amp;version=v2.8&amp;width=550" style="border: none; overflow: hidden; height: 600px; width: 100%;"></iframe></span></div></div>
+</div>
+<!------------------------6-----><!--------------------------57-----><div class="tripic">
         <div class="show hfz"><img src="img/gallery/01hfz/05.png" width="1000" height="349"><img src="img/gallery/01hfz/07.png" width="1000" height="349"></div><!--
-按鈕--><div class="features"><ul><a href="img/gallery/full/01hfzF/05.png" target="new"><li>FULL PIC 1</li></a><a href="img/gallery/full/01hfzF/07.png" target="new"><li>FULL PIC 2</li></a><a href="https://www.facebook.com/profile.php?id=100009718714688" target="new"><li>DESIGNER</li></a><li class="like" id="like57">LIKE</li></ul>
+按鈕--><div class="features">
+<ul>
+  <a class="pic" href="img/gallery/full/01hfzF/05.png" target="new">
+    <li>FULL PIC 1</li></a>
+    <a href="img/gallery/full/01hfzF/07.png" target="new">
+      <li>FULL PIC 2</li></a>
+      <a href="https://www.facebook.com/profile.php?id=100009718714688" target="new">
+      <li>DESIGNER</li></a>
+      <li id="like57">LIKE<p class="like">❤</p></li>
+</ul>
          <!--FB按鈕--><iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fgithub.com%2Fkev0213%2FFinal%2Fblob%2Fmaster%2Fimg%2F01hfz%2F02.jpg&width=103&layout=button&action=like&size=large&show_faces=true&share=true&height=65&appId=565086427022047" width="120" height="33" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe></div>
         <div class="picinfo">「讓他她平權，像個人類。」<br>「讓我平權，像個人類。」<br></div>
 <div class="info2"><li style="margin:20px 0 50px 0;">BACK</li><br>
-<div data-href="https://kev0213.github.io/Final/" data-width="100%" data-numposts="5" class="fb-comments fb_iframe_widget fb_iframe_widget_fluid" fb-xfbml-state="rendered"><iframe id="f3609e4b8fbff84" name="f27b3f52636cdc" scrolling="no" title="Facebook Social Plugin" class="fb_ltr fb_iframe_widget_lift" src="https://www.facebook.com/plugins/comments.php?api_key=113869198637480&amp;channel_url=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2FiPrOY23SGAp.js%3Fversion%3D42%23cb%3Df2b5e022ef5b3c%26domain%3Ddevelopers.facebook.com%26origin%3Dhttps%253A%252F%252Fdevelopers.facebook.com%252Ff2f2a3ab512722c%26relation%3Dparent.parent&amp;href=https%3A%2F%2Fkev0213.github.io%2FFinal%2F&amp;locale=zh_TW&amp;numposts=5&amp;sdk=joey&amp;version=v2.8&amp;width=100%25" style="border: none;  height: 600px; width: 100%; overflow:scroll;"></iframe></div></div>
-</div><!------------------------57-----><!--------------------------99-----><div class="tripic">
+
+<div data-href="https://github.com/kev0213/Final/blob/master/img/01hfz/02.jpg" data-numposts="5" class="fb-comments fb_iframe_widget" fb-xfbml-state="rendered"><span style="height: 179px; width: 550px;"><iframe id="f202fb6441fa21c" name="f2ef45161243834" scrolling="no" title="Facebook Social Plugin" class="fb_ltr" src="https://www.facebook.com/plugins/comments.php?api_key=113869198637480&amp;channel_url=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2FiPrOY23SGAp.js%3Fversion%3D42%23cb%3Dfdedf591cba394%26domain%3Ddevelopers.facebook.com%26origin%3Dhttps%253A%252F%252Fdevelopers.facebook.com%252Ffb4da77c9d7824%26relation%3Dparent.parent&amp;href=https%3A%2F%2Fgithub.com%2Fkev0213%2FFinal%2Fblob%2Fmaster%2Fimg%2F01hfz%2F02.jpg&amp;locale=zh_TW&amp;numposts=5&amp;sdk=joey&amp;version=v2.8&amp;width=550" style="border: none; overflow: hidden; height: 600px; width: 100%;"></iframe></span></div></div>
+</div>
+<!------------------------57-----><!--------------------------99-----><div class="tripic">
         <div class="show hfz"><img src="img/gallery/01hfz/09.png" width="1000" height="889"></div><!--
-按鈕--><div class="features"><ul><a href="img/gallery/full/01hfzF/09.png" target="new"><li>FULL PIC</li></a><a href="https://www.facebook.com/profile.php?id=100009718714688" target="new"><li>DESIGNER</li></a><li class="like" id="like09">LIKE</li> </ul>
+按鈕--><div class="features">
+<ul>
+  <a class="pic" href="img/gallery/full/01hfzF/09.png" target="new">
+    <li>FULL PIC</li></a>
+    <a href="https://www.facebook.com/profile.php?id=100009718714688" target="new">
+      <li>DESIGNER</li></a>
+      <li id="like09">LIKE<p class="like">❤</p></li>
+</ul>
          <!--FB按鈕--><iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fgithub.com%2Fkev0213%2FFinal%2Fblob%2Fmaster%2Fimg%2F01hfz%2F02.jpg&width=103&layout=button&action=like&size=large&show_faces=true&share=true&height=65&appId=565086427022047" width="120" height="33"  style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe></div>
         <div class="picinfo">「讓我平權，像個人類。」</div> <div class="info2">終結謠言<br>
 <li style="margin:20px 0 50px 0;">BACK</li><br>
-<div data-href="https://kev0213.github.io/Final/" data-width="100%" data-numposts="5" class="fb-comments fb_iframe_widget fb_iframe_widget_fluid" fb-xfbml-state="rendered"><iframe id="f3609e4b8fbff84" name="f27b3f52636cdc" scrolling="no" title="Facebook Social Plugin" class="fb_ltr fb_iframe_widget_lift" src="https://www.facebook.com/plugins/comments.php?api_key=113869198637480&amp;channel_url=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2FiPrOY23SGAp.js%3Fversion%3D42%23cb%3Df2b5e022ef5b3c%26domain%3Ddevelopers.facebook.com%26origin%3Dhttps%253A%252F%252Fdevelopers.facebook.com%252Ff2f2a3ab512722c%26relation%3Dparent.parent&amp;href=https%3A%2F%2Fkev0213.github.io%2FFinal%2F&amp;locale=zh_TW&amp;numposts=5&amp;sdk=joey&amp;version=v2.8&amp;width=100%25" style="border: none;  height: 600px; width: 100%; overflow:scroll;"></iframe></div></div>
-</div><!------------------------999-----><!--------------------------03-----><div class="tripic">
+
+<div data-href="https://github.com/kev0213/Final/blob/master/img/01hfz/02.jpg" data-numposts="3" class="fb-comments fb_iframe_widget" fb-xfbml-state="rendered"><span style="height: 179px; width: 550px;"><iframe id="f202fb6441fa21c" name="f2ef45161243834" scrolling="no" title="Facebook Social Plugin" class="fb_ltr" src="https://www.facebook.com/plugins/comments.php?api_key=113869198637480&amp;channel_url=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2FiPrOY23SGAp.js%3Fversion%3D42%23cb%3Dfdedf591cba394%26domain%3Ddevelopers.facebook.com%26origin%3Dhttps%253A%252F%252Fdevelopers.facebook.com%252Ffb4da77c9d7824%26relation%3Dparent.parent&amp;href=https%3A%2F%2Fgithub.com%2Fkev0213%2FFinal%2Fblob%2Fmaster%2Fimg%2F01hfz%2F02.jpg&amp;locale=zh_TW&amp;numposts=5&amp;sdk=joey&amp;version=v2.8&amp;width=550" style="border: none; overflow: hidden; height: 600px; width: 100%;"></iframe></span></div></div>
+</div>
+<!------------------------999----->
+<!--------------------------03-----><div class="tripic">
         <div class="show tmw"><img src="img/gallery/03.jpg" width="1000" height="889"></div><!--
-按鈕--><div class="features"><ul><a href="img/gallery/full/03.jpg" target="new"><li>FULL PIC</li></a><a href="https://www.facebook.com/TheMiddleofWinter/" target="new"><li>DESIGNER</li></a><li class="like" id="like09">LIKE</li> </ul>
+按鈕--><div class="features">
+<ul>
+  <a class="pic" href="img/gallery/full/03.jpg" target="new">
+    <li>FULL PIC</li></a>
+    <a href="https://www.facebook.com/TheMiddleofWinter/" target="new">
+    <li>DESIGNER</li></a>
+    <li id="like09">LIKE<p class="like">❤</p></li>
+</ul>
          <!--FB按鈕--><iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fgithub.com%2Fkev0213%2FFinal%2Fblob%2Fmaster%2Fimg%2F01hfz%2F02.jpg&width=103&layout=button&action=like&size=large&show_faces=true&share=true&height=65&appId=565086427022047" width="120" height="33"  style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe></div>
         <div class="picinfo">「我希望有道溫柔的火炬指引受傷的人」</div> <div class="info2">為什麼/真正需要被救贖的人/整日渴望拯救別人<br>你的出生/不是一個錯誤/我們不該一心向神/我們應該/與神同住<br>任明信〈目的〉<br>\<br>看厭了所有以愛包裝的惡意與歧視，所以更期許自己成為善良堅定者。<br>
 <div class="picinfo">受傷的人啊，請再撐著一下，我們就要抵達。</div><br>
 <li style="margin:20px 0 50px 0;">BACK</li><br>
-<div data-href="https://kev0213.github.io/Final/" data-width="100%" data-numposts="5" class="fb-comments fb_iframe_widget fb_iframe_widget_fluid" fb-xfbml-state="rendered"><iframe id="f3609e4b8fbff84" name="f27b3f52636cdc" scrolling="no" title="Facebook Social Plugin" class="fb_ltr fb_iframe_widget_lift" src="https://www.facebook.com/plugins/comments.php?api_key=113869198637480&amp;channel_url=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2FiPrOY23SGAp.js%3Fversion%3D42%23cb%3Df2b5e022ef5b3c%26domain%3Ddevelopers.facebook.com%26origin%3Dhttps%253A%252F%252Fdevelopers.facebook.com%252Ff2f2a3ab512722c%26relation%3Dparent.parent&amp;href=https%3A%2F%2Fkev0213.github.io%2FFinal%2F&amp;locale=zh_TW&amp;numposts=5&amp;sdk=joey&amp;version=v2.8&amp;width=100%25" style="border: none;  height: 600px; width: 100%; overflow:scroll;"></iframe></div></div>
-</div><!------------------------03-----><!--------------------------160-----><div class="tripic">
+
+<div data-href="https://github.com/kev0213/Final/blob/master/img/01hfz/02.jpg" data-numposts="3" class="fb-comments fb_iframe_widget" fb-xfbml-state="rendered"><span style="height: 179px; width: 550px;"><iframe id="f202fb6441fa21c" name="f2ef45161243834" scrolling="no" title="Facebook Social Plugin" class="fb_ltr" src="https://www.facebook.com/plugins/comments.php?api_key=113869198637480&amp;channel_url=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2FiPrOY23SGAp.js%3Fversion%3D42%23cb%3Dfdedf591cba394%26domain%3Ddevelopers.facebook.com%26origin%3Dhttps%253A%252F%252Fdevelopers.facebook.com%252Ffb4da77c9d7824%26relation%3Dparent.parent&amp;href=https%3A%2F%2Fgithub.com%2Fkev0213%2FFinal%2Fblob%2Fmaster%2Fimg%2F01hfz%2F02.jpg&amp;locale=zh_TW&amp;numposts=5&amp;sdk=joey&amp;version=v2.8&amp;width=550" style="border: none; overflow: hidden; height: 600px; width: 100%;"></iframe></span></div></div>
+</div>
+<!------------------------03----->
+<!--------------------------160-----><div class="tripic">
         <div class="show enl"><img src="img/gallery/16el/00.jpg" width="1000" height="889"></div><!--
-按鈕--><div class="features"><ul><a href="img/gallery/full/16el/00.jpg" target="new"><li>FULL PIC</li></a><a href="https://www.facebook.com/enanlin" target="new"><li>DESIGNER</li></a><li class="like" id="like09">LIKE</li> </ul>
+按鈕--><div class="features">
+<ul>
+  <a class="pic" href="img/gallery/full/16el/00.jpg" target="new">
+    <li>FULL PIC</li></a>
+    <a href="https://www.facebook.com/enanlin" target="new">
+    <li>DESIGNER</li></a>
+    <li id="like09">LIKE<p class="like">❤</p></li>
+</ul>
          <!--FB按鈕--><iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fgithub.com%2Fkev0213%2FFinal%2Fblob%2Fmaster%2Fimg%2F01hfz%2F02.jpg&width=103&layout=button&action=like&size=large&show_faces=true&share=true&height=65&appId=565086427022047" width="120" height="33"  style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe></div>
         <div class="picinfo">LOVE IS UNLIMITED</div> <div class="info2">
 <li style="margin:20px 0 50px 0;">BACK</li><br>
-<div data-href="https://kev0213.github.io/Final/" data-width="100%" data-numposts="5" class="fb-comments fb_iframe_widget fb_iframe_widget_fluid" fb-xfbml-state="rendered"><iframe id="f3609e4b8fbff84" name="f27b3f52636cdc" scrolling="no" title="Facebook Social Plugin" class="fb_ltr fb_iframe_widget_lift" src="https://www.facebook.com/plugins/comments.php?api_key=113869198637480&amp;channel_url=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2FiPrOY23SGAp.js%3Fversion%3D42%23cb%3Df2b5e022ef5b3c%26domain%3Ddevelopers.facebook.com%26origin%3Dhttps%253A%252F%252Fdevelopers.facebook.com%252Ff2f2a3ab512722c%26relation%3Dparent.parent&amp;href=https%3A%2F%2Fkev0213.github.io%2FFinal%2F&amp;locale=zh_TW&amp;numposts=5&amp;sdk=joey&amp;version=v2.8&amp;width=100%25" style="border: none;  height: 600px; width: 100%; overflow:scroll;"></iframe></div></div>
-</div><!------------------------160-----><!--------------------------161-----><div class="tripic">
+
+<div data-href="https://github.com/kev0213/Final/blob/master/img/01hfz/02.jpg" data-numposts="3" class="fb-comments fb_iframe_widget" fb-xfbml-state="rendered"><span style="height: 179px; width: 550px;"><iframe id="f202fb6441fa21c" name="f2ef45161243834" scrolling="no" title="Facebook Social Plugin" class="fb_ltr" src="https://www.facebook.com/plugins/comments.php?api_key=113869198637480&amp;channel_url=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2FiPrOY23SGAp.js%3Fversion%3D42%23cb%3Dfdedf591cba394%26domain%3Ddevelopers.facebook.com%26origin%3Dhttps%253A%252F%252Fdevelopers.facebook.com%252Ffb4da77c9d7824%26relation%3Dparent.parent&amp;href=https%3A%2F%2Fgithub.com%2Fkev0213%2FFinal%2Fblob%2Fmaster%2Fimg%2F01hfz%2F02.jpg&amp;locale=zh_TW&amp;numposts=5&amp;sdk=joey&amp;version=v2.8&amp;width=550" style="border: none; overflow: hidden; height: 600px; width: 100%;"></iframe></span></div></div>
+</div>
+<!------------------------160----->
+<!--------------------------161-----><div class="tripic">
         <div class="show enl"><img src="img/gallery/16el/01.jpg" width="1000" height="889"></div><!--
-按鈕--><div class="features"><ul><a href="img/gallery/full/16el/01.jpg" target="new"><li>FULL PIC</li></a><a href="https://www.facebook.com/enanlin" target="new"><li>DESIGNER</li></a><li class="like" id="like09">LIKE</li> </ul>
+按鈕--><div class="features">
+<ul>
+  <a class="pic" href="img/gallery/full/16el/01.jpg" target="new">
+    <li>FULL PIC</li></a>
+    <a href="https://www.facebook.com/enanlin" target="new">
+    <li>DESIGNER</li></a>
+    <li id="like09">LIKE<p class="like">❤</p></li>
+</ul>
          <!--FB按鈕--><iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fgithub.com%2Fkev0213%2FFinal%2Fblob%2Fmaster%2Fimg%2F01hfz%2F02.jpg&width=103&layout=button&action=like&size=large&show_faces=true&share=true&height=65&appId=565086427022047" width="120" height="33"  style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe></div>
         <div class="picinfo">LOVE IS UNLIMITED</div> <div class="info2">
 <li style="margin:20px 0 50px 0;">BACK</li><br>
-<div data-href="https://kev0213.github.io/Final/" data-width="100%" data-numposts="5" class="fb-comments fb_iframe_widget fb_iframe_widget_fluid" fb-xfbml-state="rendered"><iframe id="f3609e4b8fbff84" name="f27b3f52636cdc" scrolling="no" title="Facebook Social Plugin" class="fb_ltr fb_iframe_widget_lift" src="https://www.facebook.com/plugins/comments.php?api_key=113869198637480&amp;channel_url=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2FiPrOY23SGAp.js%3Fversion%3D42%23cb%3Df2b5e022ef5b3c%26domain%3Ddevelopers.facebook.com%26origin%3Dhttps%253A%252F%252Fdevelopers.facebook.com%252Ff2f2a3ab512722c%26relation%3Dparent.parent&amp;href=https%3A%2F%2Fkev0213.github.io%2FFinal%2F&amp;locale=zh_TW&amp;numposts=5&amp;sdk=joey&amp;version=v2.8&amp;width=100%25" style="border: none;  height: 600px; width: 100%; overflow:scroll;"></iframe></div></div>
-</div><!------------------------161-----><!--------------------------18-----><div class="tripic">
+
+<div data-href="https://github.com/kev0213/Final/blob/master/img/01hfz/02.jpg" data-numposts="3" class="fb-comments fb_iframe_widget" fb-xfbml-state="rendered"><span style="height: 179px; width: 550px;"><iframe id="f202fb6441fa21c" name="f2ef45161243834" scrolling="no" title="Facebook Social Plugin" class="fb_ltr" src="https://www.facebook.com/plugins/comments.php?api_key=113869198637480&amp;channel_url=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2FiPrOY23SGAp.js%3Fversion%3D42%23cb%3Dfdedf591cba394%26domain%3Ddevelopers.facebook.com%26origin%3Dhttps%253A%252F%252Fdevelopers.facebook.com%252Ffb4da77c9d7824%26relation%3Dparent.parent&amp;href=https%3A%2F%2Fgithub.com%2Fkev0213%2FFinal%2Fblob%2Fmaster%2Fimg%2F01hfz%2F02.jpg&amp;locale=zh_TW&amp;numposts=5&amp;sdk=joey&amp;version=v2.8&amp;width=550" style="border: none; overflow: hidden; height: 600px; width: 100%;"></iframe></span></div></div>
+</div>
+<!------------------------161----->
+<!--------------------------18-----><div class="tripic">
         <div class="show arn"><img src="img/gallery/18an/00.jpg" width="1000" height="381"><img src="img/gallery/18an/01.jpg" width="1000" height="381"></div><!--
-按鈕--><div class="features"><ul><a href="img/gallery/full/18an/00.jpg" target="new"><li>FULL PIC 1</li></a><a href="img/gallery/full/18an/01.jpg" target="new"><li>FULL PIC 2</li></a><a href="https://www.facebook.com/somekidding/" target="new"><li>DESIGNER</li></a><li class="like" id="like57">LIKE</li></ul>
+按鈕--><div class="features">
+<ul>
+  <a class="pic" href="img/gallery/full/18an/00.jpg" target="new">
+    <li>FULL PIC 1</li></a>
+    <a href="img/gallery/full/18an/01.jpg" target="new">
+      <li>FULL PIC 2</li></a>
+      <a href="https://www.facebook.com/somekidding/" target="new">
+    <li>DESIGNER</li></a>
+    <li id="like57">LIKE<p class="like">❤</p></li>
+</ul>
          <!--FB按鈕--><iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fgithub.com%2Fkev0213%2FFinal%2Fblob%2Fmaster%2Fimg%2F01hfz%2F02.jpg&width=103&layout=button&action=like&size=large&show_faces=true&share=true&height=65&appId=565086427022047" width="120" height="33" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe></div>
         <div class="picinfo">SEE MY RIGHTS NOW</div>
 <div class="info2"><li style="margin:20px 0 50px 0;">BACK</li><br>
-<div data-href="https://kev0213.github.io/Final/" data-width="100%" data-numposts="5" class="fb-comments fb_iframe_widget fb_iframe_widget_fluid" fb-xfbml-state="rendered"><iframe id="f3609e4b8fbff84" name="f27b3f52636cdc" scrolling="no" title="Facebook Social Plugin" class="fb_ltr fb_iframe_widget_lift" src="https://www.facebook.com/plugins/comments.php?api_key=113869198637480&amp;channel_url=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2FiPrOY23SGAp.js%3Fversion%3D42%23cb%3Df2b5e022ef5b3c%26domain%3Ddevelopers.facebook.com%26origin%3Dhttps%253A%252F%252Fdevelopers.facebook.com%252Ff2f2a3ab512722c%26relation%3Dparent.parent&amp;href=https%3A%2F%2Fkev0213.github.io%2FFinal%2F&amp;locale=zh_TW&amp;numposts=5&amp;sdk=joey&amp;version=v2.8&amp;width=100%25" style="border: none;  height: 600px; width: 100%; overflow:scroll;"></iframe></div></div>
-</div><!------------------------18-----><!--------------------------0712-----><div class="tripic">
+
+<div data-href="https://github.com/kev0213/Final/blob/master/img/01hfz/02.jpg" data-numposts="5" class="fb-comments fb_iframe_widget" fb-xfbml-state="rendered"><span style="height: 179px; width: 550px;"><iframe id="f202fb6441fa21c" name="f2ef45161243834" scrolling="no" title="Facebook Social Plugin" class="fb_ltr" src="https://www.facebook.com/plugins/comments.php?api_key=113869198637480&amp;channel_url=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2FiPrOY23SGAp.js%3Fversion%3D42%23cb%3Dfdedf591cba394%26domain%3Ddevelopers.facebook.com%26origin%3Dhttps%253A%252F%252Fdevelopers.facebook.com%252Ffb4da77c9d7824%26relation%3Dparent.parent&amp;href=https%3A%2F%2Fgithub.com%2Fkev0213%2FFinal%2Fblob%2Fmaster%2Fimg%2F01hfz%2F02.jpg&amp;locale=zh_TW&amp;numposts=5&amp;sdk=joey&amp;version=v2.8&amp;width=550" style="border: none; overflow: hidden; height: 600px; width: 100%;"></iframe></span></div></div>
+</div>
+<!------------------------18----->
+<!--------------------------0712-----><div class="tripic">
         <div class="show tzy"><img src="img/gallery/07_1.jpg" width="1000" height="370"><img src="img/gallery/07_2.jpg" width="1000" height="370"></div><!--
-按鈕--><div class="features"><ul><a href="img/gallery/full/07_1.jpg" target="new"><li>FULL PIC 1</li></a><a href="img/gallery/full/07_2.jpg" target="new"><li>FULL PIC 2</li></a><a href="https://www.facebook.com/profile.php?id=100004024587797&fref=nf" target="new"><li>DESIGNER</li></a><li class="like" id="like57">LIKE</li></ul>
+按鈕--><div class="features">
+<ul>
+  <a class="pic" href="img/gallery/full/07_1.jpg" target="new">
+    <li>FULL PIC 1</li></a>
+    <a href="img/gallery/full/07_2.jpg" target="new">
+      <li>FULL PIC 2</li></a>
+      <a href="https://www.facebook.com/profile.php?id=100004024587797&fref=nf" target="new">
+    <li>DESIGNER</li></a>
+    <li id="like57">LIKE<p class="like">❤</p></li>
+</ul>
          <!--FB按鈕--><iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fgithub.com%2Fkev0213%2FFinal%2Fblob%2Fmaster%2Fimg%2F01hfz%2F02.jpg&width=103&layout=button&action=like&size=large&show_faces=true&share=true&height=65&appId=565086427022047" width="120" height="33" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe></div>
         <div class="picinfo">在這巨大的宇宙中，你不是獨自一人。</div>
 <div class="info2"><li style="margin:20px 0 50px 0;">BACK</li><br>
-<div data-href="https://kev0213.github.io/Final/" data-width="100%" data-numposts="5" class="fb-comments fb_iframe_widget fb_iframe_widget_fluid" fb-xfbml-state="rendered"><iframe id="f3609e4b8fbff84" name="f27b3f52636cdc" scrolling="no" title="Facebook Social Plugin" class="fb_ltr fb_iframe_widget_lift" src="https://www.facebook.com/plugins/comments.php?api_key=113869198637480&amp;channel_url=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2FiPrOY23SGAp.js%3Fversion%3D42%23cb%3Df2b5e022ef5b3c%26domain%3Ddevelopers.facebook.com%26origin%3Dhttps%253A%252F%252Fdevelopers.facebook.com%252Ff2f2a3ab512722c%26relation%3Dparent.parent&amp;href=https%3A%2F%2Fkev0213.github.io%2FFinal%2F&amp;locale=zh_TW&amp;numposts=5&amp;sdk=joey&amp;version=v2.8&amp;width=100%25" style="border: none;  height: 600px; width: 100%; overflow:scroll;"></iframe></div></div>
-</div><!------------------------0712-----><!--------------------------04-----><div class="tripic">
+
+<div data-href="https://github.com/kev0213/Final/blob/master/img/01hfz/02.jpg" data-numposts="5" class="fb-comments fb_iframe_widget" fb-xfbml-state="rendered"><span style="height: 179px; width: 550px;"><iframe id="f202fb6441fa21c" name="f2ef45161243834" scrolling="no" title="Facebook Social Plugin" class="fb_ltr" src="https://www.facebook.com/plugins/comments.php?api_key=113869198637480&amp;channel_url=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2FiPrOY23SGAp.js%3Fversion%3D42%23cb%3Dfdedf591cba394%26domain%3Ddevelopers.facebook.com%26origin%3Dhttps%253A%252F%252Fdevelopers.facebook.com%252Ffb4da77c9d7824%26relation%3Dparent.parent&amp;href=https%3A%2F%2Fgithub.com%2Fkev0213%2FFinal%2Fblob%2Fmaster%2Fimg%2F01hfz%2F02.jpg&amp;locale=zh_TW&amp;numposts=5&amp;sdk=joey&amp;version=v2.8&amp;width=550" style="border: none; overflow: hidden; height: 600px; width: 100%;"></iframe></span></div></div>
+</div>
+<!------------------------0712----->
+<!--------------------------04-----><div class="tripic">
         <div class="show tby"><img src="img/gallery/04.jpg" width="1000" height="669"></div><!--
-按鈕--><div class="features"><ul><a href="img/gallery/full/04.jpg" target="new"><li>FULL PIC</li></a><a href="https://www.facebook.com/poyu.tseng2016/" target="new"><li>DESIGNER</li></a><li class="like" id="like09">LIKE</li> </ul>
+按鈕--><div class="features">
+<ul>
+  <a class="pic" href="img/gallery/full/04.jpg" target="new">
+    <li>FULL PIC</li></a>
+    <a href="https://www.facebook.com/poyu.tseng2016/" target="new">
+    <li>DESIGNER</li></a>
+    <li id="like09">LIKE<p class="like">❤</p></li>
+</ul>
          <!--FB按鈕--><iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fgithub.com%2Fkev0213%2FFinal%2Fblob%2Fmaster%2Fimg%2F01hfz%2F02.jpg&width=103&layout=button&action=like&size=large&show_faces=true&share=true&height=65&appId=565086427022047" width="120" height="33"  style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe></div>
         <div class="picinfo">「婚姻平權，刻不容緩：Over my GAY Body！」</div> <div class="info2">反同團體的仇恨言論，<br>就像是整個社會對於多元性別的壓迫與歧視，就是這樣的仇恨教導出殺死葉永鋕的兇手。<br>然而，在這一片仇恨之中，我們看見了鄉民女神四叉貓 劉宇。<br>即便身在反同團體中，他仍然用力綻放搖曳自己。<br>我們不能被打敗，尤其在婚姻平權法案通過的重要關頭，我們必須更加堅強、勇敢。<br>
 <li style="margin:20px 0 50px 0;">BACK</li><br>
-<div data-href="https://kev0213.github.io/Final/" data-width="100%" data-numposts="5" class="fb-comments fb_iframe_widget fb_iframe_widget_fluid" fb-xfbml-state="rendered"><iframe id="f3609e4b8fbff84" name="f27b3f52636cdc" scrolling="no" title="Facebook Social Plugin" class="fb_ltr fb_iframe_widget_lift" src="https://www.facebook.com/plugins/comments.php?api_key=113869198637480&amp;channel_url=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2FiPrOY23SGAp.js%3Fversion%3D42%23cb%3Df2b5e022ef5b3c%26domain%3Ddevelopers.facebook.com%26origin%3Dhttps%253A%252F%252Fdevelopers.facebook.com%252Ff2f2a3ab512722c%26relation%3Dparent.parent&amp;href=https%3A%2F%2Fkev0213.github.io%2FFinal%2F&amp;locale=zh_TW&amp;numposts=5&amp;sdk=joey&amp;version=v2.8&amp;width=100%25" style="border: none;  height: 600px; width: 100%; overflow:scroll;"></iframe></div></div>
+
+<div data-href="https://github.com/kev0213/Final/blob/master/img/01hfz/02.jpg" data-numposts="3" class="fb-comments fb_iframe_widget" fb-xfbml-state="rendered"><span style="height: 179px; width: 550px;"><iframe id="f202fb6441fa21c" name="f2ef45161243834" scrolling="no" title="Facebook Social Plugin" class="fb_ltr" src="https://www.facebook.com/plugins/comments.php?api_key=113869198637480&amp;channel_url=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2FiPrOY23SGAp.js%3Fversion%3D42%23cb%3Dfdedf591cba394%26domain%3Ddevelopers.facebook.com%26origin%3Dhttps%253A%252F%252Fdevelopers.facebook.com%252Ffb4da77c9d7824%26relation%3Dparent.parent&amp;href=https%3A%2F%2Fgithub.com%2Fkev0213%2FFinal%2Fblob%2Fmaster%2Fimg%2F01hfz%2F02.jpg&amp;locale=zh_TW&amp;numposts=5&amp;sdk=joey&amp;version=v2.8&amp;width=550" style="border: none; overflow: hidden; height: 600px; width: 100%;"></iframe></span></div></div>
 </div>
-<!------------------------04-----></div></div><!--Max不滿版文章邊界--><footer><div class="upbtn" id="top"></div><div>TOP</div><h3>本網站為教學用途，如有侵權請告知，將立刻撤除。</h3>
+<!------------------------04----->
+
+
+
+ </div>
+</div><!--Max不滿版文章邊界--><footer><div class="upbtn" id="top"></div><div>TOP</div><h3>本網站為教學用途，如有侵權請告知，將立刻撤除。</h3>
 國立臺北教育大學 數位科技設計學系(含玩具與遊戲設計碩士班)<br/ >
 系所電話：(02)2732-1104分機62478 / 63533<br/ >
 E-Mail： toygame@tea.ntue.edu.tw<br/ >
@@ -213,3 +427,4 @@ E-Mail： toygame@tea.ntue.edu.tw<br/ >
 <script src="js/jquery-3.1.1.min.js"></script>
 <script src="js/temp.js"></script>
 <script src="js/gallery.js"></script>
+<script src="js/firebase.js"></script><!-- firebase -->

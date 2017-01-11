@@ -23,6 +23,16 @@ body{
   border: 3px white;
   border-style:dashed;
 }
+#title_text{
+	position: absolute;
+  font-family: perpetua titling mt light;
+	color: white;
+	display: block;
+	margin-left: 250px;
+	margin-top: -190px;
+	font-size: 24px;
+	/*margin-top: -50px;*/
+}
 .title_text{
   padding: 0;
   font-size: 3.5vw;

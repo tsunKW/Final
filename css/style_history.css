@@ -45,7 +45,7 @@ li{
 		transition-property: filter ;transition-duration:.2s;transition-timing-function:linear;
 
 }
-.mark:hover{cursor: pointer;	-webkit-filter: drop-shadow(0 0 7px rgba(255,255,230,0.8));  	
+.mark:hover{cursor: pointer;	-webkit-filter: drop-shadow(0 0 7px rgba(255,255,230,0.8));
 	filter:  drop-shadow(0 0 7px rgba(255,255,230,0.8));}
 .mark_word{
 	position: absolute;
@@ -83,8 +83,8 @@ li{
 	background-color: white;
 	cursor: pointer;
 
-	
--webkit-filter: drop-shadow(0 0 7px rgba(255,255,230,0.8));  	
+
+-webkit-filter: drop-shadow(0 0 7px rgba(255,255,230,0.8));
 	filter:  drop-shadow(0 0 7px rgba(255,255,230,0.8));}
 #map h2{
 	margin-bottom: 0;
@@ -132,7 +132,7 @@ li{
 	border-radius: 15px;
 	z-index: 1;
 	-webkit-filter: brightness(50%);
-  	filter:brightness(50%); 
+  	filter:brightness(50%);
 	transition-property: box-shadow background-color ;transition-duration:.2s;transition-timing-function:linear;
 }
 .time li:hover
@@ -260,10 +260,10 @@ li{
 	position: relative;
 transition-property:filter ;transition-duration:.2s;transition-timing-function:linear;
 }
-.heart:hover{	-webkit-filter: drop-shadow(0 0 7px rgba(255,255,230,0.8));  	
+.heart:hover{	-webkit-filter: drop-shadow(0 0 7px rgba(255,255,230,0.8));
 	filter: drop-shadow(0 0 7px rgba(255,255,230,0.8));
 }
-.heart:active{	-webkit-filter:brightness(120%) drop-shadow(0 0 7px rgba(255,255,230,0.8));  	
+.heart:active{	-webkit-filter:brightness(120%) drop-shadow(0 0 7px rgba(255,255,230,0.8));
 	filter:brightness(120%)  drop-shadow(0 0 7px rgba(255,255,230,0.8));
 }
 .anchor{/*錨點偏移*/
@@ -293,6 +293,12 @@ transition-property:filter ;transition-duration:.2s;transition-timing-function:l
 		height: 100px;
 		font-size: 23px;
 	}
+  .mark{
+  	max-width: 50px;
+  }
+  .mark_word{
+  	font-size: 30px;
+  }
 	.time h4{font-size: 30px;}
 	.time ul{font-size: 22px;}
 	.year_R{font-size: 30px;}
@@ -389,6 +395,12 @@ transition-property:filter ;transition-duration:.2s;transition-timing-function:l
 	#map h5{
 		display: none;
 	}
+  .mark{
+    display: none;
+  }
+  .mark_word{
+    display: none;
+  }
 
 	/*time line*/
 	.time h4{font-size: 25px;}
@@ -444,7 +456,7 @@ transition-property:filter ;transition-duration:.2s;transition-timing-function:l
 		}
 .time li a:hover
 	{	opacity: 1;-webkit-filter: drop-shadow(3px 3px 3px rgba(0,0,0,1));filter: drop-shadow(3px 3px 3px rgba(0,0,0,1));
-		}	
+		}
 .time li a:active
 	{	-webkit-filter: drop-shadow(0 0 7px rgba(255,255,230,0.8));
   		filter: drop-shadow(0 0 7px rgba(255,255,230,0.8));

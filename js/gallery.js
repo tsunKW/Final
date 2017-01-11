@@ -22,27 +22,25 @@ $(function(){
   });
 
   $("#toel").click(function() {
-	  
+
       $(this).removeClass("click");
 	  	      $(".tripic").css("display", "inline-block");
 
     	 $(".tripic").css("display", "none");
 		 $(".enl").parent(".tripic").css("display", "inline-block");
-		
+
   });
     $("#tooth").click(function() {
-		  
+
       $(this).removeClass("click");
 	  	 $(".tripic").css("display", "inline-block");
 		 $(".hfz").parent(".tripic").css("display", "none");
 		 $(".enl").parent(".tripic").css("display", "none");
   });
     $("#toall").click(function() {
-		  
+
       $(this).removeClass("click");
     	 $(".tripic").css("display", "inline-block");
   });
-
-
 
 });

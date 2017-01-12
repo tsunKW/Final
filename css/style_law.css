@@ -25,7 +25,7 @@ li{
 }
 /*修法進度*/
 .explane{
-	background: rgb(249,49,49);
+	background: rgb(0,0,0);
 	background-image:url(../img/law/pride.png);
 	background-size:auto 100%;
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f93131', endColorstr='#b220e8',GradientType=1 );

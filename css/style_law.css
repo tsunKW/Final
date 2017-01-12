@@ -23,6 +23,11 @@ body{
 li{
 	list-style: none;	transition-property:box-shadow background-color;transition-duration:.2s;transition-timing-function:linear;
 }
+#st1,#st2,#st3,#st4,#st5,#st6{ opacity:0.8;transition-property:box-shadow opacity;transition-duration:.2s;transition-timing-function:linear;}
+#st1:hover,#st2:hover,#st3:hover,#st4:hover,#st5:hover,#st6:hover{opacity:1;-webkit-animation-name: pulse; animation-name: pulse;  -webkit-animation-duration: 1s; animation-duration: 1s; -webkit-animation-fill-mode: both; animation-fill-mode:}
+#st1:active,#st2:active,#st3:active,#st4:active,#st5:active,#st6:active{-webkit-filter: brightness(110%);
+  	filter:brightness(110%); }
+
 /*修法進度*/
 .explane{
 	background: rgb(0,0,0);
@@ -175,6 +180,7 @@ ul{padding:0;margin:0;}
 .black{color:black;}
 #four_points ul:hover{background:rgba(255,255,255,0.3);}
 #four_points li:hover{background:rgba(255,255,255,0.3);box-shadow:0 0 35px rgba(0,0,0,0.8);-webkit-animation-name: pulse; animation-name: pulse;  -webkit-animation-duration: 1s; animation-duration: 1s; -webkit-animation-fill-mode: both; animation-fill-mode: both;cursor: pointer;}
+#four_points li:active{background:rgba(255,255,255,0.5);-webkit-filter: brightness(110%);  	filter:brightness(110%);}
 .law li>div{transition-property:box-shadow background-color;transition-duration:.2s;transition-timing-function:linear;}
 .law li>div:hover{box-shadow:0 0 35px rgba(0,0,0,0.8);-webkit-animation-name: pulse; animation-name: pulse;  -webkit-animation-duration: 1s; animation-duration: 1s; -webkit-animation-fill-mode: both; animation-fill-mode: both;}
 @media only screen and (min-width: 1280px) {

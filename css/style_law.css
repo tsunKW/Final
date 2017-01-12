@@ -175,7 +175,10 @@ ul{padding:0;}
 }
 .black{color:black;}
 #four_points ul:hover{background:rgba(255,255,255,0.3);}
-#four_points li:hover{background:rgba(255,255,255,0.3);box-shadow:0 0 35px rgba(0,0,0,0.8);-webkit-animation-name: pulse; animation-name: pulse;  -webkit-animation-duration: 1s; animation-duration: 1s; -webkit-animation-fill-mode: both; animation-fill-mode: both;}
+#four_points li:hover{
+	background:rgba(255,255,255,0.3);box-shadow:0 0 35px rgba(0,0,0,0.8);-webkit-animation-name: pulse; animation-name: pulse;  -webkit-animation-duration: 1s; animation-duration: 1s; -webkit-animation-fill-mode: both; animation-fill-mode: both;
+	cursor: pointer;
+}
 .law li>div{transition-property:box-shadow background-color;transition-duration:.2s;transition-timing-function:linear;}
 .law li>div:hover{box-shadow:0 0 35px rgba(0,0,0,0.8);-webkit-animation-name: pulse; animation-name: pulse;  -webkit-animation-duration: 1s; animation-duration: 1s; -webkit-animation-fill-mode: both; animation-fill-mode: both;}
 @media only screen and (min-width: 1280px) {

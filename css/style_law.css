@@ -26,18 +26,17 @@ li{
 /*修法進度*/
 .explane{
 	background: rgb(249,49,49);
-	background: -moz-linear-gradient(-45deg,  rgba(249,49,49,1) 0%, rgba(255,152,35,1) 24%, rgba(244,244,34,1) 43%, rgba(32,234,42,1) 62%, rgba(32,140,234,1) 78%, rgba(178,32,232,1) 100%);
-	background: -webkit-linear-gradient(-45deg,  rgba(249,49,49,1) 0%,rgba(255,152,35,1) 24%,rgba(244,244,34,1) 43%,rgba(32,234,42,1) 62%,rgba(32,140,234,1) 78%,rgba(178,32,232,1) 100%);
-	background: linear-gradient(135deg,  rgba(249,49,49,1) 0%,rgba(255,152,35,1) 24%,rgba(244,244,34,1) 43%,rgba(32,234,42,1) 62%,rgba(32,140,234,1) 78%,rgba(178,32,232,1) 100%);
+	background-image:url(../img/law/pride.png);
+	background-size:auto 100%;
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f93131', endColorstr='#b220e8',GradientType=1 );
-
+	z-index:3;
 	position: absolute;
 	width: 65vw;
-	height: 20vw;
-	max-width: 70%;
+	max-width: 60%;
 	margin-left: 15%;
 	margin-right: 15%;
 	margin-top: 17%;
+	padding:0 5% 0 5%;
 	border-radius: 10px;
 	border: white 15px;
 	border-style: double;
@@ -49,10 +48,10 @@ li{
 }
 .explane img:hover{cursor: pointer;}
 .explane p{
-	border: 0;
-	font-size: 3vw;
+	border: 0;margin:0;
 }
-ul{padding:0;}
+.explane .textbox{	font-size:30px;line-height:35px;}
+ul{padding:0;margin:0;}
 #area1{
 	padding-top: 10%;
 	padding-bottom: 30%;
@@ -85,7 +84,7 @@ ul{padding:0;}
 	background-color: rgba(255, 255, 255, 0);
 	}
 #area2 p{
-	font-size: 2vw;
+	font-size: 20px;
 }
 #area2 > p{ /*副標*/
 	margin-top: 0;
@@ -128,8 +127,8 @@ ul{padding:0;}
 #four_points li{display:inline-block;
 	text-align:center;
 	max-width: 20vw;
-	margin-left: 2vw;
-	margin-right: 2vw;
+	margin-left: 1.5vw;
+	margin-right: 1.5vw;
 }
 #four_points img{
 	max-width: 70%;
@@ -175,10 +174,7 @@ ul{padding:0;}
 }
 .black{color:black;}
 #four_points ul:hover{background:rgba(255,255,255,0.3);}
-#four_points li:hover{
-	background:rgba(255,255,255,0.3);box-shadow:0 0 35px rgba(0,0,0,0.8);-webkit-animation-name: pulse; animation-name: pulse;  -webkit-animation-duration: 1s; animation-duration: 1s; -webkit-animation-fill-mode: both; animation-fill-mode: both;
-	cursor: pointer;
-}
+#four_points li:hover{background:rgba(255,255,255,0.3);box-shadow:0 0 35px rgba(0,0,0,0.8);-webkit-animation-name: pulse; animation-name: pulse;  -webkit-animation-duration: 1s; animation-duration: 1s; -webkit-animation-fill-mode: both; animation-fill-mode: both;cursor: pointer;}
 .law li>div{transition-property:box-shadow background-color;transition-duration:.2s;transition-timing-function:linear;}
 .law li>div:hover{box-shadow:0 0 35px rgba(0,0,0,0.8);-webkit-animation-name: pulse; animation-name: pulse;  -webkit-animation-duration: 1s; animation-duration: 1s; -webkit-animation-fill-mode: both; animation-fill-mode: both;}
 @media only screen and (min-width: 1280px) {
@@ -194,6 +190,12 @@ ul{padding:0;}
 
 	/*五條法案&四大重點*/
 	#four_points p{font-size: 33px;}
+	#four_points li{display:inline-block;
+	text-align:center;
+	max-width: 260px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
 	.law{font-size: 25px;}
 	.law .original{
 		font-size: 18px;
@@ -258,22 +260,22 @@ ul{padding:0;}
 		margin-top: 50px;
 	}
 		.pic2,.pic1{
-		width:100vw;max-width:100vw;height:30vw;overflow:hidden;box-sizing:border-box;margin:50px 0 0 0;
+		width:100vw;max-width:100vw;height:33vw;overflow:hidden;box-sizing:border-box;margin:50px 0 0 0;
 	}
 	.pic2 img,.pic1 img{margin-top:-15%;}
 	.word1{
 		margin:auto;
-		font-size: 2.5vw;
+		font-size: 16px;
 	}
 	.word2{
 		max-width: 100%;
 		margin:auto;
 		padding-left: 5%;
 		padding-right: 5%;
-		font-size: 2.5vw;
+		font-size: 16px;
 	}
 	#area2 p{
-		font-size: 4vw;
+		font-size: 20px;
 		margin: 10px 0 5px;
 	}
 	#area2 > p{ /*副標*/

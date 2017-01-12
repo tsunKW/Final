@@ -49,15 +49,23 @@ body{
 	margin-top:20vh;
 	width:100%;
 	height:100vh;
+	
 }
+#rainbow ul{width:103vw; overflow:hidden;}
 #rainbow li
 {	list-style:none;
 	display:inline-block;
-	width:16.666%;
+	width:16%;
 	height:90vh;
 	overflow:hidden;
 	text-align:center;
 	position:relative;
+	transition-property:width;transition-duration:.2s;transition-timing-function:linear;
+
+	}
+#rainbow li:hover
+{		width:20%;
+	
 	}
 #rainbow .text
 {	-webkit-writing-mode: vertical-lr;
@@ -70,6 +78,8 @@ body{
 	pointer-events: none;
 	position:absolute;
 	z-index:4;
+	transition-property:color;transition-duration:.2s;transition-timing-function:linear;
+
 	}
 #rainbow img{
 	margin-left:-45vh;
@@ -82,13 +92,49 @@ body{
 	transition-property:opacity filter;transition-duration:.2s;transition-timing-function:linear;
 	}
 
+@-webkit-keyframes pulse {
+  from {    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+   to {
+    -webkit-transform: scale3d(2, 2, 2);
+    transform: scale3d(2, 2, 2 );
+  }
+}
+
+@keyframes pulse {
+  from {    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+   to {
+    -webkit-transform: scale3d(2, 2, 2);
+    transform: scale3d(2, 2, 2 );
+  }
+}
+
+
+
+
+
+ 
 
 #rainbow img:hover{
 	-webkit-filter: brightness(100%);
   	filter:brightness(100%); 
-	opacity:0.8;
+	opacity:0.8; 
+	-webkit-animation-name: pulse;
+  animation-name: pulse;
+    -webkit-animation-duration: 20s;
+  animation-duration: 20s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
 	}
-
+#rainbow img:active{
+	-webkit-filter: brightness(120%);
+  	filter:brightness(120%); 
+	opacity:1;
+	}
+#rainbow li:nth-child(2):hover .text{color:black;}
 #rainbow ul{padding:0; margin:0;}
 #rainbow li:nth-child(1){
 box-shadow:rgba(255,57,96.5);
@@ -102,6 +148,7 @@ background: -webkit-linear-gradient(white,rgba(267,158,119,1),rgba(237,128,89,1)
 background: -moz-linear-gradient(white,rgba(267,158,119,1),rgba(237,128,89,1),white);
 background: linear-gradient(white,rgba(267,158,119,1),rgba(237,128,89,1),white);
 }
+
 #rainbow li:nth-child(3){
 box-shadow:rgba(243,215,90,1);
 background: -webkit-linear-gradient(white,rgba(273,245,120,1),rgba(243,215,90,1),white);

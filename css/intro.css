@@ -37,6 +37,25 @@ body{
   from {    -webkit-transform: scale3d(1, 1, 1);    transform: scale3d(1, 1, 1);  }
   to {    -webkit-transform: scale3d(1.05, 1.05, 1);    transform: scale3d(1.05, 1.05, 1);  }}
 .pulse {  -webkit-animation-name: pulse;  animation-name: pulse;}
+@-webkit-keyframes pulse2 {
+  from {    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+   to {
+    -webkit-transform: scale3d(1.5, 1.5, 1.5);
+    transform: scale3d(1.5, 1.5, 1.5 );
+  }
+}
+
+@keyframes pulse2 {
+  from {    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+   to {
+    -webkit-transform: scale3d(1.5, 1.5, 1.5);
+    transform: scale3d(1.5, 1.5, 1.5 );
+  }
+}
 
 
 	/*內文設定*/
@@ -45,7 +64,7 @@ body{
 .highlight .textbox{padding:0 0 0 0;}
 .textbox:hover{	opacity:1;box-shadow:0 0 150px rgba(0,0,0,0.2) ;		background-color: rgba(255,255,230,0.1);}
 .highlight {overflow:hidden;padding:0 5% 0 5%;box-sizing:border-box;height:230px;opacity:1;	background-color: rgba(255,255,255,0.5); }
-.highlight:hover{padding:10% 5% 0 5%;height:45vw;min-height:600px;max-height:700px;background-color: rgba(255,255,230,0.5);box-shadow:0 0 150px rgba(0,0,0,0.5) ;text-shadow:0 0 5px rgba(0,0,0,1);  -webkit-animation-name: pulse; animation-name: pulse;  -webkit-animation-duration: 1s; animation-duration: 1s; -webkit-animation-fill-mode: both; animation-fill-mode: both;}
+.highlight:hover{padding:10% 5% 0 5%;height:45vw;min-height:600px;max-height:700px;background-color: rgba(255,255,230,0.5);box-shadow:0 0 150px rgba(0,0,0,0.5) ;text-shadow:0 0 5px rgba(0,0,0,1);}
 .highlight:hover .text{color:white;}
 .shi {padding:2% 0 0 0;height:90px;vertical-align:middle ;}
 .shi:hover{padding: 20% 5% 0 5%;min-height:0px;}
@@ -78,7 +97,19 @@ body{
 	opacity:0;
 	transition-property:opacity filter;transition-duration:.2s;transition-timing-function:linear;
 	}
-.highlight  img:hover{opacity:0.8;	}
+.highlight  img:hover{opacity:0.8;	-webkit-animation-name: pulse2;
+  animation-name: pulse2;
+    -webkit-animation-duration: 20s;
+  animation-duration: 20s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;	}
+ .duotext{overflow:hidden;}
+  .duotext img:hover{opacity:0.8;	-webkit-animation-name: pulse2;
+  animation-name: pulse2;
+    -webkit-animation-duration: 20s;
+  animation-duration: 20s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;	}
 .shi img{
 	margin-top:-450px;
 	margin-left:-5%;
@@ -105,14 +136,20 @@ body{
 .tripic
 {	/*並排pic框*/
 	display:inline-block;
-	position:relative;
+	position:relative;overflow:hidden;
 	margin:1vw 1vw 1vw 1vw ;
 	width:30%;
 	transition-property:box-shadow background-color height;transition-duration:.2s;transition-timing-function:linear;
 	}
 .tripic:hover{	
-	background-color:rgba(255,255,255,0.5);box-shadow:0 0 50px rgba(0,0,0,0.2) ;-webkit-animation-name: pulse;  animation-name: pulse;-webkit-animation-name: pulse; animation-name: pulse;  -webkit-animation-duration: 1s; animation-duration: 1s; -webkit-animation-fill-mode: both; animation-fill-mode: both;}
-
+	background-color:rgba(255,255,255,0.5);box-shadow:0 0 50px rgba(0,0,0,0.2) ;  }
+.tripic img:hover{		-webkit-animation-name: pulse2;
+  animation-name: pulse2;
+    -webkit-animation-duration: 15s;
+  animation-duration: 15s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
 @media only screen and (min-width: 1280px) {
 
 

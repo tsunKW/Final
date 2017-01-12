@@ -14,4 +14,13 @@ $(function(){
     });
   }
 
+  $("#pt1").click(function(){$("#point_exp1").fadeIn();});
+  $("#pt2").click(function(){$("#point_exp2").fadeIn();});
+  $("#pt3").click(function(){$("#point_exp3").fadeIn();});
+  $("#pt4").click(function(){$("#point_exp4").fadeIn();});
+
+  $(".explane img").click(function(){
+    $(this).parent(".explane").fadeOut();
+  });
+
 });
